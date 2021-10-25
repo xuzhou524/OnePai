@@ -1,0 +1,21 @@
+//
+//  OnePai_Prefix.pch
+//  OnePai
+//
+//  Created by HuaLaLa on 2021/10/25.
+//
+
+#ifndef OnePai_Prefix_pch
+#define OnePai_Prefix_pch
+
+#import "Masonry.h"
+
+#import "EXTScope.h"
+#import "Common.h"
+#import "Toast.h"
+
+#import "UIView+Extention.h"
+#import "UIDevice+Extention.h"
+#import "UIButton+Extention.h"
+
+#endif /* OnePai_Prefix_pch */
