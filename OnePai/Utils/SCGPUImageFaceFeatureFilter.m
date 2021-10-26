@@ -6,7 +6,7 @@
 //  Copyright © 2019年 zhouzhou. All rights reserved.
 //
 
-#import "SCFaceDetectorManager.h"
+#import "XZFaceDetectorManager.h"
 
 #import "SCGPUImageFaceFeatureFilter.h"
 

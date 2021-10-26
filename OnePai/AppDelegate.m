@@ -6,7 +6,7 @@
 //
 
 #import "AppDelegate.h"
-#import "SCCameraViewController.h"
+#import "XZCameraViewController.h"
 
 @interface AppDelegate ()
 
@@ -20,7 +20,7 @@
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     self.window.backgroundColor = [UIColor whiteColor];
     
-    UINavigationController * rootTabBarVC = [[UINavigationController alloc] initWithRootViewController:[SCCameraViewController new]];
+    UINavigationController * rootTabBarVC = [[UINavigationController alloc] initWithRootViewController:[XZCameraViewController new]];
     self.window.rootViewController = rootTabBarVC;
 
     [self.window makeKeyAndVisible];
