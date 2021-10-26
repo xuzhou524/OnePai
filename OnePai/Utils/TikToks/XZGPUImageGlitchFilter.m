@@ -1,12 +1,12 @@
 //
-//  SCGPUImageGlitchFilter.m
+//  XZGPUImageGlitchFilter.m
 //  OnePai
 //
 //  Created by zhouzhou on 2019/6/2.
 //  Copyright © 2019年 zhouzhou. All rights reserved.
 //
 
-#import "SCGPUImageGlitchFilter.h"
+#import "XZGPUImageGlitchFilter.h"
 
 NSString * const kSCGPUImageGlitchFilterShaderString = SHADER_STRING
 (
@@ -48,7 +48,7 @@ NSString * const kSCGPUImageGlitchFilterShaderString = SHADER_STRING
  }
 );
 
-@implementation SCGPUImageGlitchFilter
+@implementation XZGPUImageGlitchFilter
 
 - (instancetype)init {
     self = [super initWithFragmentShaderFromString:kSCGPUImageGlitchFilterShaderString];

@@ -1,12 +1,12 @@
 //
-//  SCGPUImageScaleFilter.m
+//  XZGPUImageScaleFilter.m
 //  OnePai
 //
 //  Created by zhouzhou on 2019/6/1.
 //  Copyright © 2019年 zhouzhou. All rights reserved.
 //
 
-#import "SCGPUImageScaleFilter.h"
+#import "XZGPUImageScaleFilter.h"
 
 NSString * const kSCGPUImageScaleFilterShaderString = SHADER_STRING
 (
@@ -31,7 +31,7 @@ NSString * const kSCGPUImageScaleFilterShaderString = SHADER_STRING
  }
 );
 
-@implementation SCGPUImageScaleFilter
+@implementation XZGPUImageScaleFilter
 
 - (id)init {
     self = [super initWithVertexShaderFromString:kSCGPUImageScaleFilterShaderString fragmentShaderFromString:kGPUImagePassthroughFragmentShaderString];

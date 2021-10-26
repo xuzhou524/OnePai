@@ -1,5 +1,5 @@
 //
-//  SCGPUImageVertigoFilter.h
+//  XZGPUImageShineWhiteFilter.h
 //  OnePai
 //
 //  Created by zhouzhou on 2019/6/2.
@@ -8,6 +8,6 @@
 
 #import "XZGPUImageBaseFilter.h"
 
-@interface SCGPUImageVertigoFilter : XZGPUImageBaseFilter
+@interface XZGPUImageShineWhiteFilter : XZGPUImageBaseFilter
 
 @end

@@ -1,12 +1,12 @@
 //
-//  SCGPUImageShakeFilter.m
+//  XZGPUImageShakeFilter.m
 //  OnePai
 //
 //  Created by zhouzhou on 2019/6/2.
 //  Copyright © 2019年 zhouzhou. All rights reserved.
 //
 
-#import "SCGPUImageShakeFilter.h"
+#import "XZGPUImageShakeFilter.h"
 
 NSString * const kSCGPUImageShakeFilterShaderString = SHADER_STRING
 (
@@ -36,7 +36,7 @@ NSString * const kSCGPUImageShakeFilterShaderString = SHADER_STRING
  }
 );
 
-@implementation SCGPUImageShakeFilter
+@implementation XZGPUImageShakeFilter
 
 - (instancetype)init {
     self = [super initWithFragmentShaderFromString:kSCGPUImageShakeFilterShaderString];

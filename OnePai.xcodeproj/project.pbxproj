@@ -65,12 +65,12 @@
 		16A0735F272654A6007A56D2 /* XZGPUImageSplit4V4Filter.m in Sources */ = {isa = PBXBuildFile; fileRef = 16A07356272654A5007A56D2 /* XZGPUImageSplit4V4Filter.m */; };
 		16A07360272654A6007A56D2 /* XZGPUImageSplit1V3Filter.m in Sources */ = {isa = PBXBuildFile; fileRef = 16A07359272654A6007A56D2 /* XZGPUImageSplit1V3Filter.m */; };
 		16A07361272654A6007A56D2 /* XZGPUImageDynamicSplitFilter.m in Sources */ = {isa = PBXBuildFile; fileRef = 16A0735A272654A6007A56D2 /* XZGPUImageDynamicSplitFilter.m */; };
-		16A0736F272654C7007A56D2 /* SCGPUImageSoulOutFilter.m in Sources */ = {isa = PBXBuildFile; fileRef = 16A07363272654C6007A56D2 /* SCGPUImageSoulOutFilter.m */; };
-		16A07370272654C7007A56D2 /* SCGPUImageVertigoFilter.m in Sources */ = {isa = PBXBuildFile; fileRef = 16A07367272654C6007A56D2 /* SCGPUImageVertigoFilter.m */; };
-		16A07371272654C7007A56D2 /* SCGPUImageGlitchFilter.m in Sources */ = {isa = PBXBuildFile; fileRef = 16A07368272654C6007A56D2 /* SCGPUImageGlitchFilter.m */; };
-		16A07372272654C7007A56D2 /* SCGPUImageScaleFilter.m in Sources */ = {isa = PBXBuildFile; fileRef = 16A0736A272654C6007A56D2 /* SCGPUImageScaleFilter.m */; };
-		16A07373272654C7007A56D2 /* SCGPUImageShakeFilter.m in Sources */ = {isa = PBXBuildFile; fileRef = 16A0736B272654C6007A56D2 /* SCGPUImageShakeFilter.m */; };
-		16A07374272654C7007A56D2 /* SCGPUImageShineWhiteFilter.m in Sources */ = {isa = PBXBuildFile; fileRef = 16A0736D272654C7007A56D2 /* SCGPUImageShineWhiteFilter.m */; };
+		16A0736F272654C7007A56D2 /* XZGPUImageSoulOutFilter.m in Sources */ = {isa = PBXBuildFile; fileRef = 16A07363272654C6007A56D2 /* XZGPUImageSoulOutFilter.m */; };
+		16A07370272654C7007A56D2 /* XZGPUImageVertigoFilter.m in Sources */ = {isa = PBXBuildFile; fileRef = 16A07367272654C6007A56D2 /* XZGPUImageVertigoFilter.m */; };
+		16A07371272654C7007A56D2 /* XZGPUImageGlitchFilter.m in Sources */ = {isa = PBXBuildFile; fileRef = 16A07368272654C6007A56D2 /* XZGPUImageGlitchFilter.m */; };
+		16A07372272654C7007A56D2 /* XZGPUImageScaleFilter.m in Sources */ = {isa = PBXBuildFile; fileRef = 16A0736A272654C6007A56D2 /* XZGPUImageScaleFilter.m */; };
+		16A07373272654C7007A56D2 /* XZGPUImageShakeFilter.m in Sources */ = {isa = PBXBuildFile; fileRef = 16A0736B272654C6007A56D2 /* XZGPUImageShakeFilter.m */; };
+		16A07374272654C7007A56D2 /* XZGPUImageShineWhiteFilter.m in Sources */ = {isa = PBXBuildFile; fileRef = 16A0736D272654C7007A56D2 /* XZGPUImageShineWhiteFilter.m */; };
 		16A07377272654D6007A56D2 /* XZVisualEffectView.m in Sources */ = {isa = PBXBuildFile; fileRef = 16A07375272654D6007A56D2 /* XZVisualEffectView.m */; };
 		16A0737A272654E2007A56D2 /* XZViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 16A07378272654E2007A56D2 /* XZViewController.m */; };
 		16A07387272654FD007A56D2 /* XZFilterHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 16A0737C272654FC007A56D2 /* XZFilterHelper.m */; };
@@ -203,18 +203,18 @@
 		16A07359272654A6007A56D2 /* XZGPUImageSplit1V3Filter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XZGPUImageSplit1V3Filter.m; sourceTree = "<group>"; };
 		16A0735A272654A6007A56D2 /* XZGPUImageDynamicSplitFilter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XZGPUImageDynamicSplitFilter.m; sourceTree = "<group>"; };
 		16A0735B272654A6007A56D2 /* XZGPUImageSplit3V3Filter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XZGPUImageSplit3V3Filter.h; sourceTree = "<group>"; };
-		16A07363272654C6007A56D2 /* SCGPUImageSoulOutFilter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SCGPUImageSoulOutFilter.m; sourceTree = "<group>"; };
-		16A07364272654C6007A56D2 /* SCGPUImageVertigoFilter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SCGPUImageVertigoFilter.h; sourceTree = "<group>"; };
-		16A07365272654C6007A56D2 /* SCGPUImageShineWhiteFilter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SCGPUImageShineWhiteFilter.h; sourceTree = "<group>"; };
-		16A07366272654C6007A56D2 /* SCGPUImageGlitchFilter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SCGPUImageGlitchFilter.h; sourceTree = "<group>"; };
-		16A07367272654C6007A56D2 /* SCGPUImageVertigoFilter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SCGPUImageVertigoFilter.m; sourceTree = "<group>"; };
-		16A07368272654C6007A56D2 /* SCGPUImageGlitchFilter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SCGPUImageGlitchFilter.m; sourceTree = "<group>"; };
-		16A07369272654C6007A56D2 /* SCGPUImageScaleFilter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SCGPUImageScaleFilter.h; sourceTree = "<group>"; };
-		16A0736A272654C6007A56D2 /* SCGPUImageScaleFilter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SCGPUImageScaleFilter.m; sourceTree = "<group>"; };
-		16A0736B272654C6007A56D2 /* SCGPUImageShakeFilter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SCGPUImageShakeFilter.m; sourceTree = "<group>"; };
-		16A0736C272654C7007A56D2 /* SCGPUImageShakeFilter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SCGPUImageShakeFilter.h; sourceTree = "<group>"; };
-		16A0736D272654C7007A56D2 /* SCGPUImageShineWhiteFilter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SCGPUImageShineWhiteFilter.m; sourceTree = "<group>"; };
-		16A0736E272654C7007A56D2 /* SCGPUImageSoulOutFilter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SCGPUImageSoulOutFilter.h; sourceTree = "<group>"; };
+		16A07363272654C6007A56D2 /* XZGPUImageSoulOutFilter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XZGPUImageSoulOutFilter.m; sourceTree = "<group>"; };
+		16A07364272654C6007A56D2 /* XZGPUImageVertigoFilter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XZGPUImageVertigoFilter.h; sourceTree = "<group>"; };
+		16A07365272654C6007A56D2 /* XZGPUImageShineWhiteFilter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XZGPUImageShineWhiteFilter.h; sourceTree = "<group>"; };
+		16A07366272654C6007A56D2 /* XZGPUImageGlitchFilter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XZGPUImageGlitchFilter.h; sourceTree = "<group>"; };
+		16A07367272654C6007A56D2 /* XZGPUImageVertigoFilter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XZGPUImageVertigoFilter.m; sourceTree = "<group>"; };
+		16A07368272654C6007A56D2 /* XZGPUImageGlitchFilter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XZGPUImageGlitchFilter.m; sourceTree = "<group>"; };
+		16A07369272654C6007A56D2 /* XZGPUImageScaleFilter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XZGPUImageScaleFilter.h; sourceTree = "<group>"; };
+		16A0736A272654C6007A56D2 /* XZGPUImageScaleFilter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XZGPUImageScaleFilter.m; sourceTree = "<group>"; };
+		16A0736B272654C6007A56D2 /* XZGPUImageShakeFilter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XZGPUImageShakeFilter.m; sourceTree = "<group>"; };
+		16A0736C272654C7007A56D2 /* XZGPUImageShakeFilter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XZGPUImageShakeFilter.h; sourceTree = "<group>"; };
+		16A0736D272654C7007A56D2 /* XZGPUImageShineWhiteFilter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XZGPUImageShineWhiteFilter.m; sourceTree = "<group>"; };
+		16A0736E272654C7007A56D2 /* XZGPUImageSoulOutFilter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XZGPUImageSoulOutFilter.h; sourceTree = "<group>"; };
 		16A07375272654D6007A56D2 /* XZVisualEffectView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XZVisualEffectView.m; sourceTree = "<group>"; };
 		16A07376272654D6007A56D2 /* XZVisualEffectView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XZVisualEffectView.h; sourceTree = "<group>"; };
 		16A07378272654E2007A56D2 /* XZViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XZViewController.m; sourceTree = "<group>"; };
@@ -537,18 +537,18 @@
 		16A07362272654B9007A56D2 /* TikToks */ = {
 			isa = PBXGroup;
 			children = (
-				16A07366272654C6007A56D2 /* SCGPUImageGlitchFilter.h */,
-				16A07368272654C6007A56D2 /* SCGPUImageGlitchFilter.m */,
-				16A07369272654C6007A56D2 /* SCGPUImageScaleFilter.h */,
-				16A0736A272654C6007A56D2 /* SCGPUImageScaleFilter.m */,
-				16A0736C272654C7007A56D2 /* SCGPUImageShakeFilter.h */,
-				16A0736B272654C6007A56D2 /* SCGPUImageShakeFilter.m */,
-				16A07365272654C6007A56D2 /* SCGPUImageShineWhiteFilter.h */,
-				16A0736D272654C7007A56D2 /* SCGPUImageShineWhiteFilter.m */,
-				16A0736E272654C7007A56D2 /* SCGPUImageSoulOutFilter.h */,
-				16A07363272654C6007A56D2 /* SCGPUImageSoulOutFilter.m */,
-				16A07364272654C6007A56D2 /* SCGPUImageVertigoFilter.h */,
-				16A07367272654C6007A56D2 /* SCGPUImageVertigoFilter.m */,
+				16A07366272654C6007A56D2 /* XZGPUImageGlitchFilter.h */,
+				16A07368272654C6007A56D2 /* XZGPUImageGlitchFilter.m */,
+				16A07369272654C6007A56D2 /* XZGPUImageScaleFilter.h */,
+				16A0736A272654C6007A56D2 /* XZGPUImageScaleFilter.m */,
+				16A0736C272654C7007A56D2 /* XZGPUImageShakeFilter.h */,
+				16A0736B272654C6007A56D2 /* XZGPUImageShakeFilter.m */,
+				16A07365272654C6007A56D2 /* XZGPUImageShineWhiteFilter.h */,
+				16A0736D272654C7007A56D2 /* XZGPUImageShineWhiteFilter.m */,
+				16A0736E272654C7007A56D2 /* XZGPUImageSoulOutFilter.h */,
+				16A07363272654C6007A56D2 /* XZGPUImageSoulOutFilter.m */,
+				16A07364272654C6007A56D2 /* XZGPUImageVertigoFilter.h */,
+				16A07367272654C6007A56D2 /* XZGPUImageVertigoFilter.m */,
 			);
 			path = TikToks;
 			sourceTree = "<group>";
@@ -688,17 +688,17 @@
 				16A0735E272654A6007A56D2 /* XZGPUImageStaticSplitFilter.m in Sources */,
 				16A072E127265355007A56D2 /* XZCameraViewController+UI.m in Sources */,
 				16A0726D27264BA0007A56D2 /* AppDelegate.m in Sources */,
-				16A0736F272654C7007A56D2 /* SCGPUImageSoulOutFilter.m in Sources */,
+				16A0736F272654C7007A56D2 /* XZGPUImageSoulOutFilter.m in Sources */,
 				16A0727E27264BA4007A56D2 /* main.m in Sources */,
-				16A07372272654C7007A56D2 /* SCGPUImageScaleFilter.m in Sources */,
+				16A07372272654C7007A56D2 /* XZGPUImageScaleFilter.m in Sources */,
 				16A072D827265355007A56D2 /* XZVideoResultViewController.m in Sources */,
-				16A07371272654C7007A56D2 /* SCGPUImageGlitchFilter.m in Sources */,
+				16A07371272654C7007A56D2 /* XZGPUImageGlitchFilter.m in Sources */,
 				16A0733527265405007A56D2 /* XZCapturingButton.m in Sources */,
 				16A07388272654FD007A56D2 /* XZAssetHelper.m in Sources */,
 				16A0733127265405007A56D2 /* XZFilterCategoryCell.m in Sources */,
 				16A073472726545B007A56D2 /* UIView+Extention.m in Sources */,
 				16A0733227265405007A56D2 /* XZFilterCategoryView.m in Sources */,
-				16A07370272654C7007A56D2 /* SCGPUImageVertigoFilter.m in Sources */,
+				16A07370272654C7007A56D2 /* XZGPUImageVertigoFilter.m in Sources */,
 				16A072FE272653A8007A56D2 /* XZFilterHandler.m in Sources */,
 				16A0737A272654E2007A56D2 /* XZViewController.m in Sources */,
 				16A0733B27265439007A56D2 /* XZGPUImageBaseFilter.m in Sources */,
@@ -723,7 +723,7 @@
 				16A072DA27265355007A56D2 /* XZCameraViewController+RecordVideo.m in Sources */,
 				16A0735F272654A6007A56D2 /* XZGPUImageSplit4V4Filter.m in Sources */,
 				16A0733027265405007A56D2 /* XZCameraTopView.m in Sources */,
-				16A07373272654C7007A56D2 /* SCGPUImageShakeFilter.m in Sources */,
+				16A07373272654C7007A56D2 /* XZGPUImageShakeFilter.m in Sources */,
 				16A0733327265405007A56D2 /* XZFilterMaterialViewCell.m in Sources */,
 				16A072DB27265355007A56D2 /* XZCameraViewController+TakePhoto.m in Sources */,
 				16A0733727265405007A56D2 /* XZFilterBarView.m in Sources */,
@@ -734,7 +734,7 @@
 				16A0738C272654FD007A56D2 /* XZFileHelper.m in Sources */,
 				16A07389272654FD007A56D2 /* XZTimeHelper.m in Sources */,
 				16A07387272654FD007A56D2 /* XZFilterHelper.m in Sources */,
-				16A07374272654C7007A56D2 /* SCGPUImageShineWhiteFilter.m in Sources */,
+				16A07374272654C7007A56D2 /* XZGPUImageShineWhiteFilter.m in Sources */,
 				16A0733827265405007A56D2 /* XZSettingCell.m in Sources */,
 				16A072DC27265355007A56D2 /* XZVideoResultViewController+UI.m in Sources */,
 				16A072FD272653A8007A56D2 /* XZFilterMaterialModel.m in Sources */,

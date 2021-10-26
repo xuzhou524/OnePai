@@ -1,12 +1,12 @@
 //
-//  SCGPUImageSoulOutFilter.m
+//  XZGPUImageSoulOutFilter.m
 //  OnePai
 //
 //  Created by zhouzhou on 2019/6/2.
 //  Copyright © 2019年 zhouzhou. All rights reserved.
 //
 
-#import "SCGPUImageSoulOutFilter.h"
+#import "XZGPUImageSoulOutFilter.h"
 
 NSString * const kSCGPUImageSoulOutFilterShaderString = SHADER_STRING
 (
@@ -38,7 +38,7 @@ NSString * const kSCGPUImageSoulOutFilterShaderString = SHADER_STRING
  }
 );
 
-@implementation SCGPUImageSoulOutFilter
+@implementation XZGPUImageSoulOutFilter
 
 - (instancetype)init {
     self = [super initWithFragmentShaderFromString:kSCGPUImageSoulOutFilterShaderString];

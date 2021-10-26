@@ -1,12 +1,12 @@
 //
-//  SCGPUImageVertigoFilter.m
+//  XZGPUImageVertigoFilter.m
 //  OnePai
 //
 //  Created by zhouzhou on 2019/6/2.
 //  Copyright © 2019年 zhouzhou. All rights reserved.
 //
 
-#import "SCGPUImageVertigoFilter.h"
+#import "XZGPUImageVertigoFilter.h"
 
 NSString * const kSCGPUImageVertigoFilterShaderString = SHADER_STRING
 (
@@ -76,7 +76,7 @@ NSString * const kSCGPUImageVertigoFilterShaderString = SHADER_STRING
  }
 );
 
-@implementation SCGPUImageVertigoFilter
+@implementation XZGPUImageVertigoFilter
 
 - (instancetype)init {
     self = [super initWithFragmentShaderFromString:kSCGPUImageVertigoFilterShaderString];

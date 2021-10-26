@@ -1,12 +1,12 @@
 //
-//  SCGPUImageShineWhiteFilter.m
+//  XZGPUImageShineWhiteFilter.m
 //  OnePai
 //
 //  Created by zhouzhou on 2019/6/2.
 //  Copyright © 2019年 zhouzhou. All rights reserved.
 //
 
-#import "SCGPUImageShineWhiteFilter.h"
+#import "XZGPUImageShineWhiteFilter.h"
 
 NSString * const kSCGPUImageShineWhiteFilterShaderString = SHADER_STRING
 (
@@ -33,7 +33,7 @@ NSString * const kSCGPUImageShineWhiteFilterShaderString = SHADER_STRING
  }
 );
 
-@implementation SCGPUImageShineWhiteFilter
+@implementation XZGPUImageShineWhiteFilter
 
 - (instancetype)init {
     self = [super initWithFragmentShaderFromString:kSCGPUImageShineWhiteFilterShaderString];

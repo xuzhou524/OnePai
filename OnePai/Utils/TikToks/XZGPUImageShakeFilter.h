@@ -1,5 +1,5 @@
 //
-//  SCGPUImageSoulOutFilter.h
+//  XZGPUImageShakeFilter.h
 //  OnePai
 //
 //  Created by zhouzhou on 2019/6/2.
@@ -8,6 +8,6 @@
 
 #import "XZGPUImageBaseFilter.h"
 
-@interface SCGPUImageSoulOutFilter : XZGPUImageBaseFilter
+@interface XZGPUImageShakeFilter : XZGPUImageBaseFilter
 
 @end
