@@ -1,12 +1,12 @@
 //
-//  SCGPUImageDynamicSplitFilter.m
+//  XZGPUImageDynamicSplitFilter.m
 //  OnePai
 //
 //  Created by zhouzhou on 2019/11/9.
 //  Copyright © 2019 zhouzhou. All rights reserved.
 //
 
-#import "SCGPUImageDynamicSplitFilter.h"
+#import "XZGPUImageDynamicSplitFilter.h"
 
 static CGFloat const kCaptureTime = 2.0f;    // 自动捕获视频帧的间隔时间
 
@@ -44,7 +44,7 @@ NSString * const kSCGPUImageDynamicSplitFilterShaderString = SHADER_STRING
  }
 );
 
-@interface SCGPUImageDynamicSplitFilter () {
+@interface XZGPUImageDynamicSplitFilter () {
     GLint firstTextureUniform;
     GLint secondTextureUniform;
     GLint thirdTextureUniform;
@@ -65,7 +65,7 @@ NSString * const kSCGPUImageDynamicSplitFilterShaderString = SHADER_STRING
 
 @end
 
-@implementation SCGPUImageDynamicSplitFilter
+@implementation XZGPUImageDynamicSplitFilter
 
 - (void)dealloc {
     [self releaseAllFramebuffer];

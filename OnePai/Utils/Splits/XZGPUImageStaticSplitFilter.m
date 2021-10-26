@@ -1,12 +1,12 @@
 //
-//  SCGPUImageStaticSplitFilter.m
+//  XZGPUImageStaticSplitFilter.m
 //  OnePai
 //
 //  Created by zhouzhou on 2019/11/9.
 //  Copyright © 2019 zhouzhou. All rights reserved.
 //
 
-#import "SCGPUImageStaticSplitFilter.h"
+#import "XZGPUImageStaticSplitFilter.h"
 
 NSString * const kSCGPUImageStaticSplitFilterShaderString = SHADER_STRING
 (
@@ -41,7 +41,7 @@ NSString * const kSCGPUImageStaticSplitFilterShaderString = SHADER_STRING
  }
 );
 
-@implementation SCGPUImageStaticSplitFilter
+@implementation XZGPUImageStaticSplitFilter
 
 - (id)init {
     self = [super initWithFragmentShaderFromString:kSCGPUImageStaticSplitFilterShaderString];

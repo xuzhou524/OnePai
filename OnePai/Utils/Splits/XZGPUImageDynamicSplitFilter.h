@@ -1,5 +1,5 @@
 //
-//  SCGPUImageDynamicSplitFilter.h
+//  XZGPUImageDynamicSplitFilter.h
 //  OnePai
 //
 //  Created by zhouzhou on 2019/11/9.
@@ -8,6 +8,6 @@
 
 #import "XZGPUImageBaseFilter.h"
 
-@interface SCGPUImageDynamicSplitFilter : XZGPUImageBaseFilter
+@interface XZGPUImageDynamicSplitFilter : XZGPUImageBaseFilter
 
 @end

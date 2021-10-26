@@ -1,5 +1,5 @@
 //
-//  SCGPUImageStaticSplitFilter.h
+//  XZGPUImageStaticSplitFilter.h
 //  OnePai
 //
 //  Created by zhouzhou on 2019/11/9.
@@ -8,7 +8,7 @@
 
 #import "XZGPUImageBaseFilter.h"
 
-@interface SCGPUImageStaticSplitFilter : XZGPUImageBaseFilter
+@interface XZGPUImageStaticSplitFilter : XZGPUImageBaseFilter
 
 /// 水平分割数，默认 2.0，最小 1.0
 @property (nonatomic, assign) CGFloat horizontal;
