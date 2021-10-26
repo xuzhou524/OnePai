@@ -1,28 +1,28 @@
 //
-//  SCFilterMaterialView.m
+//  XZFilterMaterialView.m
 //  OnePai
 //
 //  Created by zhouzhou on 2019/4/13.
 //  Copyright © 2019年 zhouzhou. All rights reserved.
 //
 
-#import "SCFilterMaterialViewCell.h"
-#import "SCFilterMaterialView.h"
+#import "XZFilterMaterialViewCell.h"
+#import "XZFilterMaterialView.h"
 
-static NSString * const kSCFilterMaterialViewReuseIdentifier = @"SCFilterMaterialViewReuseIdentifier";
+static NSString * const kXZFilterMaterialViewReuseIdentifier = @"XZFilterMaterialViewReuseIdentifier";
 
-@interface SCFilterMaterialView () <UICollectionViewDelegate, UICollectionViewDataSource>
+@interface XZFilterMaterialView () <UICollectionViewDelegate, UICollectionViewDataSource>
 
 @property (nonatomic, strong) UICollectionView *collectionView;
 @property (nonatomic, strong) UICollectionViewFlowLayout *collectionViewLayout;
 
 @property (nonatomic, assign) NSInteger currentIndex;
 
-@property (nonatomic, weak) SCFilterMaterialModel *selectMaterialModel;
+@property (nonatomic, weak) XZFilterMaterialModel *selectMaterialModel;
 
 @end
 
-@implementation SCFilterMaterialView
+@implementation XZFilterMaterialView
 
 - (instancetype)initWithFrame:(CGRect)frame {
     self = [super initWithFrame:frame];
@@ -65,7 +65,7 @@ static NSString * const kSCFilterMaterialViewReuseIdentifier = @"SCFilterMateria
     self.collectionView.dataSource = self;
     self.collectionView.showsVerticalScrollIndicator = NO;
     self.collectionView.showsHorizontalScrollIndicator = NO;
-    [self.collectionView registerClass:[SCFilterMaterialViewCell class] forCellWithReuseIdentifier:kSCFilterMaterialViewReuseIdentifier];
+    [self.collectionView registerClass:[XZFilterMaterialViewCell class] forCellWithReuseIdentifier:kXZFilterMaterialViewReuseIdentifier];
     
     dispatch_async(dispatch_get_main_queue(), ^{
         [self selectIndex:0];
@@ -93,8 +93,8 @@ static NSString * const kSCFilterMaterialViewReuseIdentifier = @"SCFilterMateria
 }
 
 - (void)selectIndex:(NSIndexPath *)indexPath {
-    SCFilterMaterialViewCell *lastSelectCell = (SCFilterMaterialViewCell *)[self.collectionView cellForItemAtIndexPath:[NSIndexPath indexPathForRow:self.currentIndex inSection:0]];
-    SCFilterMaterialViewCell *currentSelectCell = (SCFilterMaterialViewCell *)[self.collectionView cellForItemAtIndexPath:indexPath];
+    XZFilterMaterialViewCell *lastSelectCell = (XZFilterMaterialViewCell *)[self.collectionView cellForItemAtIndexPath:[NSIndexPath indexPathForRow:self.currentIndex inSection:0]];
+    XZFilterMaterialViewCell *currentSelectCell = (XZFilterMaterialViewCell *)[self.collectionView cellForItemAtIndexPath:indexPath];
     lastSelectCell.isSelect = NO;
     currentSelectCell.isSelect = YES;
     
@@ -110,7 +110,7 @@ static NSString * const kSCFilterMaterialViewReuseIdentifier = @"SCFilterMateria
 
 #pragma mark - Custom Accessor
 
-- (void)setItemList:(NSArray<SCFilterMaterialModel *> *)itemList {
+- (void)setItemList:(NSArray<XZFilterMaterialModel *> *)itemList {
     _itemList = [itemList copy];
     
     [self.collectionView reloadData];
@@ -133,7 +133,7 @@ static NSString * const kSCFilterMaterialViewReuseIdentifier = @"SCFilterMateria
 }
 
 - (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath {
-    SCFilterMaterialViewCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:kSCFilterMaterialViewReuseIdentifier forIndexPath:indexPath];
+    XZFilterMaterialViewCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:kXZFilterMaterialViewReuseIdentifier forIndexPath:indexPath];
     cell.filterMaterialModel = self.itemList[indexPath.row];
     cell.isSelect = cell.filterMaterialModel == self.selectMaterialModel;
     

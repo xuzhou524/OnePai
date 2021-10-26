@@ -15,8 +15,8 @@
 #import "SCCameraVideoTimeLabel.h"
 
 #import "XZCameraManager.h"
-#import "SCFilterManager.h"
-#import "SCFilterHandler.h"
+#import "XZFilterManager.h"
+#import "XZFilterHandler.h"
 
 #import "XZVideoModel.h"
 #import "LFGPUImageBeautyFilter.h"
@@ -55,10 +55,10 @@
 
 @property (nonatomic, strong) NSTimer *videoTimer;  // 用于刷新录制中视频的时间
 
-@property (nonatomic, copy) NSArray<SCFilterMaterialModel *> *defaultFilterMaterials;
-@property (nonatomic, copy) NSArray<SCFilterMaterialModel *> *tikTokFilterMaterials;
-@property (nonatomic, copy) NSArray<SCFilterMaterialModel *> *faceRecognizerFilterMaterials;
-@property (nonatomic, copy) NSArray<SCFilterMaterialModel *> *splitFilterMaterials;
+@property (nonatomic, copy) NSArray<XZFilterMaterialModel *> *defaultFilterMaterials;
+@property (nonatomic, copy) NSArray<XZFilterMaterialModel *> *tikTokFilterMaterials;
+@property (nonatomic, copy) NSArray<XZFilterMaterialModel *> *faceRecognizerFilterMaterials;
+@property (nonatomic, copy) NSArray<XZFilterMaterialModel *> *splitFilterMaterials;
 
 #pragma mark - UI
 
@@ -108,7 +108,7 @@
 - (void)removeBeautifyFilter;
 
 /// 根据分类索引，获取滤镜列表
-- (NSArray<SCFilterMaterialModel *> *)filtersWithCategoryIndex:(NSInteger)index;
+- (NSArray<XZFilterMaterialModel *> *)filtersWithCategoryIndex:(NSInteger)index;
 
 #pragma mark - TakePhoto
 

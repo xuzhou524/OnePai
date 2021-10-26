@@ -1,5 +1,5 @@
 //
-//  SCGPUImageMovieWriter.h
+//  XZGPUImageMovieWriter.h
 //  OnePai
 //
 //  Created by zhouzhou on 2019/5/25.
@@ -12,7 +12,7 @@
 
 #import "GPUImageMovieWriter.h"
 
-@interface SCGPUImageMovieWriter : NSObject <GPUImageInput>
+@interface XZGPUImageMovieWriter : NSObject <GPUImageInput>
 {
     BOOL alreadyFinishedRecording;
     

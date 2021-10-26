@@ -1,5 +1,5 @@
 //
-//  SCGPUImageMovieWriter.m
+//  XZGPUImageMovieWriter.m
 //  OnePai
 //
 //  Created by zhouzhou on 2019/5/25.
@@ -10,11 +10,11 @@
 #import "GLProgram.h"
 #import "GPUImageFilter.h"
 
-#import "SCGPUImageMovieWriter.h"
+#import "XZGPUImageMovieWriter.h"
 
 static BOOL allowWriteAudio = NO;
 
-@interface SCGPUImageMovieWriter ()
+@interface XZGPUImageMovieWriter ()
 {
     GLuint movieFramebuffer, movieRenderbuffer;
     
@@ -44,7 +44,7 @@ static BOOL allowWriteAudio = NO;
 
 @end
 
-@implementation SCGPUImageMovieWriter
+@implementation XZGPUImageMovieWriter
 
 @synthesize hasAudioTrack = _hasAudioTrack;
 @synthesize encodingLiveVideo = _encodingLiveVideo;

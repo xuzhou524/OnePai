@@ -1,5 +1,5 @@
 //
-//  SCFilterMaterialModel.h
+//  XZFilterMaterialModel.h
 //  OnePai
 //
 //  Created by zhouzhou on 2019/4/13.
@@ -8,7 +8,7 @@
 
 #import <Foundation/Foundation.h>
 
-@interface SCFilterMaterialModel : NSObject
+@interface XZFilterMaterialModel : NSObject
 
 @property (nonatomic, copy) NSString *filterID;
 @property (nonatomic, copy) NSString *filterName;

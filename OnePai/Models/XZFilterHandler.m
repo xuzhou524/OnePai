@@ -1,5 +1,5 @@
 //
-//  SCFilterHandler.m
+//  XZFilterHandler.m
 //  OnePai
 //
 //  Created by zhouzhou on 2019/5/25.
@@ -9,9 +9,9 @@
 #import "LFGPUImageBeautyFilter.h"
 #import "SCGPUImageBaseFilter.h"
 
-#import "SCFilterHandler.h"
+#import "XZFilterHandler.h"
 
-@interface SCFilterHandler ()
+@interface XZFilterHandler ()
 
 @property (nonatomic, strong) NSMutableArray<GPUImageFilter *> *filters;
 
@@ -26,7 +26,7 @@
 
 @end
 
-@implementation SCFilterHandler
+@implementation XZFilterHandler
 
 - (void)dealloc {
     [self endDisplayLink];

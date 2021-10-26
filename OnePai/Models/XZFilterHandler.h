@@ -1,5 +1,5 @@
 //
-//  SCFilterHandler.h
+//  XZFilterHandler.h
 //  OnePai
 //
 //  Created by zhouzhou on 2019/5/25.
@@ -10,7 +10,7 @@
 
 #import <Foundation/Foundation.h>
 
-@interface SCFilterHandler : NSObject
+@interface XZFilterHandler : NSObject
 
 /// 设置美颜滤镜是否可用
 @property (nonatomic, assign) BOOL beautifyFilterEnable;

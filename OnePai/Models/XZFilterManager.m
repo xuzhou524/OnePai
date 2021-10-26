@@ -1,21 +1,21 @@
 //
-//  SCFilterManager.m
+//  XZFilterManager.m
 //  OnePai
 //
 //  Created by zhouzhou on 2019/4/13.
 //  Copyright © 2019年 zhouzhou. All rights reserved.
 //
 
-#import "SCFilterManager.h"
+#import "XZFilterManager.h"
 
-static SCFilterManager *_filterManager;
+static XZFilterManager *_filterManager;
 
-@interface SCFilterManager ()
+@interface XZFilterManager ()
 
-@property (nonatomic, strong, readwrite) NSArray<SCFilterMaterialModel *> *defaultFilters;
-@property (nonatomic, strong, readwrite) NSArray<SCFilterMaterialModel *> *tikTokFilters;
-@property (nonatomic, strong, readwrite) NSArray<SCFilterMaterialModel *> *faceRecognizerFilters;
-@property (nonatomic, strong, readwrite) NSArray<SCFilterMaterialModel *> *splitFilters;
+@property (nonatomic, strong, readwrite) NSArray<XZFilterMaterialModel *> *defaultFilters;
+@property (nonatomic, strong, readwrite) NSArray<XZFilterMaterialModel *> *tikTokFilters;
+@property (nonatomic, strong, readwrite) NSArray<XZFilterMaterialModel *> *faceRecognizerFilters;
+@property (nonatomic, strong, readwrite) NSArray<XZFilterMaterialModel *> *splitFilters;
 
 @property (nonatomic, strong) NSDictionary *defaultFilterMaterialsInfo;
 @property (nonatomic, strong) NSDictionary *tikTokFilterMaterialsInfo;
@@ -26,12 +26,12 @@ static SCFilterManager *_filterManager;
 
 @end
 
-@implementation SCFilterManager
+@implementation XZFilterManager
 
-+ (SCFilterManager *)shareManager {
++ (XZFilterManager *)shareManager {
     static dispatch_once_t onceToken;
     dispatch_once(&onceToken, ^{
-        _filterManager = [[SCFilterManager alloc] init];
+        _filterManager = [[XZFilterManager alloc] init];
     });
     return _filterManager;
 }
@@ -87,13 +87,13 @@ static SCFilterManager *_filterManager;
     self.splitFilterMaterialsInfo = [info copy];
 }
 
-- (NSArray<SCFilterMaterialModel *> *)setupFiltersWithInfo:(NSDictionary *)info {
+- (NSArray<XZFilterMaterialModel *> *)setupFiltersWithInfo:(NSDictionary *)info {
     NSMutableArray *mutArr = [[NSMutableArray alloc] init];
     
     NSArray *defaultArray = info[@"Default"];
     
     for (NSDictionary *dict in defaultArray) {
-        SCFilterMaterialModel *model = [[SCFilterMaterialModel alloc] init];
+        XZFilterMaterialModel *model = [[XZFilterMaterialModel alloc] init];
         model.filterID = dict[@"filter_id"];
         model.filterName = dict[@"filter_name"];
         
@@ -107,28 +107,28 @@ static SCFilterManager *_filterManager;
 
 #pragma mark - Custom Accessor
 
-- (NSArray<SCFilterMaterialModel *> *)defaultFilters {
+- (NSArray<XZFilterMaterialModel *> *)defaultFilters {
     if (!_defaultFilters) {
         _defaultFilters = [self setupFiltersWithInfo:self.defaultFilterMaterialsInfo];
     }
     return _defaultFilters;
 }
 
-- (NSArray<SCFilterMaterialModel *> *)tiktokFilters {
+- (NSArray<XZFilterMaterialModel *> *)tiktokFilters {
     if (!_tikTokFilters) {
         _tikTokFilters = [self setupFiltersWithInfo:self.tikTokFilterMaterialsInfo];
     }
     return _tikTokFilters;
 }
 
-- (NSArray<SCFilterMaterialModel *> *)faceRecognizerFilters {
+- (NSArray<XZFilterMaterialModel *> *)faceRecognizerFilters {
     if (!_faceRecognizerFilters) {
         _faceRecognizerFilters = [self setupFiltersWithInfo:self.faceRecognizerMaterialsInfo];
     }
     return _faceRecognizerFilters;
 }
 
-- (NSArray<SCFilterMaterialModel *> *)splitFilters {
+- (NSArray<XZFilterMaterialModel *> *)splitFilters {
     if (!_splitFilters) {
         _splitFilters = [self setupFiltersWithInfo:self.splitFilterMaterialsInfo];
     }

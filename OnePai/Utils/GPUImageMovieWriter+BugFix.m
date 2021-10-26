@@ -9,7 +9,7 @@
 #import <objc/runtime.h>
 #import <RSSwizzle/RSSwizzle.h>
 
-#import "SCGPUImageMovieWriter.h"
+#import "XZGPUImageMovieWriter.h"
 
 #import "GPUImageMovieWriter+BugFix.h"
 
@@ -17,11 +17,11 @@
 
 /**
  GPUImageMovieWriter 保存存在黑屏问题，
- 在不修改源码的基础上，在 SCGPUImageMovieWriter 上修改， 然后通过方法交换的方式，
+ 在不修改源码的基础上，在 XZGPUImageMovieWriter 上修改， 然后通过方法交换的方式，
  修改 GPUImageMovieWriter 的 initWithMovieURL:size:fileType:outputSettings: 方法，
- 将此方法创建的对象的 isa 指针，指向 SCGPUImageMovieWriter，
+ 将此方法创建的对象的 isa 指针，指向 XZGPUImageMovieWriter，
  则之后这些对象调用的方法是修复后的方法。
- SCGPUImageMovieWriter 的修改方式参考链接：https://www.jianshu.com/p/443e8ea7b0c5
+ XZGPUImageMovieWriter 的修改方式参考链接：https://www.jianshu.com/p/443e8ea7b0c5
  */
 + (void)load {
     static dispatch_once_t onceToken;
@@ -33,7 +33,7 @@
                                 RSSWReplacement({
             
             id obj = RSSWCallOriginal(newMovieURL, newSize, newFileType, outputSettings);
-            object_setClass(obj, [SCGPUImageMovieWriter class]);
+            object_setClass(obj, [XZGPUImageMovieWriter class]);
             return obj;
             
         }), RSSwizzleModeAlways, NULL);

@@ -20,7 +20,7 @@ static XZCameraManager *_cameraManager;
 
 @property (nonatomic, strong, readwrite) GPUImageStillCamera *camera;
 @property (nonatomic, weak) GPUImageView *outputView;
-@property (nonatomic, strong, readwrite) SCFilterHandler *currentFilterHandler; 
+@property (nonatomic, strong, readwrite) XZFilterHandler *currentFilterHandler;
 @property (nonatomic, strong) GPUImageMovieWriter *movieWriter;
 @property (nonatomic, copy) NSString *currentTmpVideoPath;
 
@@ -263,7 +263,7 @@ static XZCameraManager *_cameraManager;
  初始化 FilterHandler
  */
 - (void)setupFilterHandler {
-    self.currentFilterHandler = [[SCFilterHandler alloc] init];
+    self.currentFilterHandler = [[XZFilterHandler alloc] init];
     // 添加效果滤镜
     [self.currentFilterHandler setEffectFilter:nil];
 }

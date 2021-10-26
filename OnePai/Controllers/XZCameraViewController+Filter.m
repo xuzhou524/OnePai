@@ -25,7 +25,7 @@
     [XZCameraManager shareManager].currentFilterHandler.beautifyFilterEnable = NO;
 }
 
-- (NSArray<SCFilterMaterialModel *> *)filtersWithCategoryIndex:(NSInteger)index {
+- (NSArray<XZFilterMaterialModel *> *)filtersWithCategoryIndex:(NSInteger)index {
     if (index == 0) {
         return self.defaultFilterMaterials;
     } else if (index == 1) {

@@ -82,30 +82,30 @@
 
 #pragma mark - Custom Accessor
 
-- (NSArray<SCFilterMaterialModel *> *)defaultFilterMaterials {
+- (NSArray<XZFilterMaterialModel *> *)defaultFilterMaterials {
     if (!_defaultFilterMaterials) {
-        _defaultFilterMaterials = [[SCFilterManager shareManager] defaultFilters];
+        _defaultFilterMaterials = [[XZFilterManager shareManager] defaultFilters];
     }
     return _defaultFilterMaterials;
 }
 
-- (NSArray<SCFilterMaterialModel *> *)tikTokFilterMaterials {
+- (NSArray<XZFilterMaterialModel *> *)tikTokFilterMaterials {
     if (!_tikTokFilterMaterials) {
-        _tikTokFilterMaterials = [[SCFilterManager shareManager] tiktokFilters];
+        _tikTokFilterMaterials = [[XZFilterManager shareManager] tiktokFilters];
     }
     return _tikTokFilterMaterials;
 }
 
-- (NSArray<SCFilterMaterialModel *> *)faceRecognizerFilterMaterials {
+- (NSArray<XZFilterMaterialModel *> *)faceRecognizerFilterMaterials {
     if (!_faceRecognizerFilterMaterials) {
-        _faceRecognizerFilterMaterials = [[SCFilterManager shareManager] faceRecognizerFilters];
+        _faceRecognizerFilterMaterials = [[XZFilterManager shareManager] faceRecognizerFilters];
     }
     return _faceRecognizerFilterMaterials;
 }
 
-- (NSArray<SCFilterMaterialModel *> *)splitFilterMaterials {
+- (NSArray<XZFilterMaterialModel *> *)splitFilterMaterials {
     if (!_splitFilterMaterials) {
-        _splitFilterMaterials = [[SCFilterManager shareManager] splitFilters];
+        _splitFilterMaterials = [[XZFilterManager shareManager] splitFilters];
     }
     return _splitFilterMaterials;
 }
@@ -189,10 +189,10 @@
 }
 
 - (void)filterBarView:(SCFilterBarView *)filterBarView materialDidScrollToIndex:(NSUInteger)index {
-    NSArray<SCFilterMaterialModel *> *models = [self filtersWithCategoryIndex:self.filterBarView.currentCategoryIndex];
+    NSArray<XZFilterMaterialModel *> *models = [self filtersWithCategoryIndex:self.filterBarView.currentCategoryIndex];
     
-    SCFilterMaterialModel *model = models[index];
-    [[XZCameraManager shareManager].currentFilterHandler setEffectFilter:[[SCFilterManager shareManager] filterWithFilterID:model.filterID]];
+    XZFilterMaterialModel *model = models[index];
+    [[XZCameraManager shareManager].currentFilterHandler setEffectFilter:[[XZFilterManager shareManager] filterWithFilterID:model.filterID]];
 }
 
 - (void)filterBarView:(SCFilterBarView *)filterBarView beautifySwitchIsOn:(BOOL)isOn {

@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-#import "SCFilterMaterialModel.h"
+#import "XZFilterMaterialModel.h"
 
 @class SCFilterBarView;
 
@@ -27,16 +27,16 @@
 @property (nonatomic, weak) id <SCFilterBarViewDelegate> delegate;
 
 /// 内置滤镜
-@property (nonatomic, copy) NSArray<SCFilterMaterialModel *> *defaultFilterMaterials;
+@property (nonatomic, copy) NSArray<XZFilterMaterialModel *> *defaultFilterMaterials;
 
 /// 抖音滤镜
-@property (nonatomic, copy) NSArray<SCFilterMaterialModel *> *tikTokFilterMaterials;
+@property (nonatomic, copy) NSArray<XZFilterMaterialModel *> *tikTokFilterMaterials;
 
 /// 人脸识别滤镜
-@property (nonatomic, copy) NSArray<SCFilterMaterialModel *> *faceRecognizerFilterMaterials;
+@property (nonatomic, copy) NSArray<XZFilterMaterialModel *> *faceRecognizerFilterMaterials;
 
 /// 分屏滤镜
-@property (nonatomic, copy) NSArray<SCFilterMaterialModel *> *splitFilterMaterials;
+@property (nonatomic, copy) NSArray<XZFilterMaterialModel *> *splitFilterMaterials;
 
 - (NSInteger)currentCategoryIndex;
 

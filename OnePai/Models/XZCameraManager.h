@@ -6,7 +6,7 @@
 //  Copyright © 2019年 zhouzhou. All rights reserved.
 //
 
-#import "SCFilterHandler.h"
+#import "XZFilterHandler.h"
 
 typedef void (^TakePhotoResult)(UIImage *resultImage, NSError *error);
 
@@ -48,7 +48,7 @@ typedef NS_ENUM(NSUInteger, SCCameraRatio) {
 @property (nonatomic, strong, readonly) GPUImageStillCamera *camera;
 
 /// 滤镜
-@property (nonatomic, strong, readonly) SCFilterHandler *currentFilterHandler;
+@property (nonatomic, strong, readonly) XZFilterHandler *currentFilterHandler;
 
 /// 闪光灯模式，后置摄像头才有效，默认 SCCameraFlashModeOff
 @property (nonatomic, assign) SCCameraFlashMode flashMode;

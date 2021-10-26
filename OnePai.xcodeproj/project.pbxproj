@@ -36,18 +36,18 @@
 		16A072E127265355007A56D2 /* XZCameraViewController+UI.m in Sources */ = {isa = PBXBuildFile; fileRef = 16A072D727265355007A56D2 /* XZCameraViewController+UI.m */; };
 		16A072E827265386007A56D2 /* XZTools in Resources */ = {isa = PBXBuildFile; fileRef = 16A072E527265386007A56D2 /* XZTools */; };
 		16A072FA272653A8007A56D2 /* XZCameraManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 16A072EA272653A8007A56D2 /* XZCameraManager.m */; };
-		16A072FB272653A8007A56D2 /* SCGPUImageMovieWriter.m in Sources */ = {isa = PBXBuildFile; fileRef = 16A072EB272653A8007A56D2 /* SCGPUImageMovieWriter.m */; };
+		16A072FB272653A8007A56D2 /* XZGPUImageMovieWriter.m in Sources */ = {isa = PBXBuildFile; fileRef = 16A072EB272653A8007A56D2 /* XZGPUImageMovieWriter.m */; };
 		16A072FC272653A8007A56D2 /* XZSettingSectionModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 16A072EC272653A8007A56D2 /* XZSettingSectionModel.m */; };
-		16A072FD272653A8007A56D2 /* SCFilterMaterialModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 16A072ED272653A8007A56D2 /* SCFilterMaterialModel.m */; };
-		16A072FE272653A8007A56D2 /* SCFilterHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 16A072EE272653A8007A56D2 /* SCFilterHandler.m */; };
+		16A072FD272653A8007A56D2 /* XZFilterMaterialModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 16A072ED272653A8007A56D2 /* XZFilterMaterialModel.m */; };
+		16A072FE272653A8007A56D2 /* XZFilterHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 16A072EE272653A8007A56D2 /* XZFilterHandler.m */; };
 		16A072FF272653A8007A56D2 /* XZSettingModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 16A072F4272653A8007A56D2 /* XZSettingModel.m */; };
-		16A07300272653A8007A56D2 /* SCFilterManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 16A072F5272653A8007A56D2 /* SCFilterManager.m */; };
+		16A07300272653A8007A56D2 /* XZFilterManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 16A072F5272653A8007A56D2 /* XZFilterManager.m */; };
 		16A07301272653A8007A56D2 /* XZVideoModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 16A072F8272653A8007A56D2 /* XZVideoModel.m */; };
-		16A0732F27265405007A56D2 /* SCFilterMaterialView.m in Sources */ = {isa = PBXBuildFile; fileRef = 16A0731C27265404007A56D2 /* SCFilterMaterialView.m */; };
+		16A0732F27265405007A56D2 /* XZFilterMaterialView.m in Sources */ = {isa = PBXBuildFile; fileRef = 16A0731C27265404007A56D2 /* XZFilterMaterialView.m */; };
 		16A0733027265405007A56D2 /* SCCameraTopView.m in Sources */ = {isa = PBXBuildFile; fileRef = 16A0731E27265404007A56D2 /* SCCameraTopView.m */; };
 		16A0733127265405007A56D2 /* SCFilterCategoryCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 16A0732127265404007A56D2 /* SCFilterCategoryCell.m */; };
 		16A0733227265405007A56D2 /* SCFilterCategoryView.m in Sources */ = {isa = PBXBuildFile; fileRef = 16A0732227265404007A56D2 /* SCFilterCategoryView.m */; };
-		16A0733327265405007A56D2 /* SCFilterMaterialViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 16A0732327265404007A56D2 /* SCFilterMaterialViewCell.m */; };
+		16A0733327265405007A56D2 /* XZFilterMaterialViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 16A0732327265404007A56D2 /* XZFilterMaterialViewCell.m */; };
 		16A0733427265405007A56D2 /* SCCameraVideoTimeLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 16A0732627265404007A56D2 /* SCCameraVideoTimeLabel.m */; };
 		16A0733527265405007A56D2 /* SCCapturingButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 16A0732A27265404007A56D2 /* SCCapturingButton.m */; };
 		16A0733627265405007A56D2 /* SCCapturingModeSwitchView.m in Sources */ = {isa = PBXBuildFile; fileRef = 16A0732B27265405007A56D2 /* SCCapturingModeSwitchView.m */; };
@@ -141,30 +141,30 @@
 		16A072D727265355007A56D2 /* XZCameraViewController+UI.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "XZCameraViewController+UI.m"; sourceTree = "<group>"; };
 		16A072E527265386007A56D2 /* XZTools */ = {isa = PBXFileReference; lastKnownFileType = folder; path = XZTools; sourceTree = "<group>"; };
 		16A072EA272653A8007A56D2 /* XZCameraManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XZCameraManager.m; sourceTree = "<group>"; };
-		16A072EB272653A8007A56D2 /* SCGPUImageMovieWriter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SCGPUImageMovieWriter.m; sourceTree = "<group>"; };
+		16A072EB272653A8007A56D2 /* XZGPUImageMovieWriter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XZGPUImageMovieWriter.m; sourceTree = "<group>"; };
 		16A072EC272653A8007A56D2 /* XZSettingSectionModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XZSettingSectionModel.m; sourceTree = "<group>"; };
-		16A072ED272653A8007A56D2 /* SCFilterMaterialModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SCFilterMaterialModel.m; sourceTree = "<group>"; };
-		16A072EE272653A8007A56D2 /* SCFilterHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SCFilterHandler.m; sourceTree = "<group>"; };
-		16A072EF272653A8007A56D2 /* SCFilterHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SCFilterHandler.h; sourceTree = "<group>"; };
-		16A072F0272653A8007A56D2 /* SCGPUImageMovieWriter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SCGPUImageMovieWriter.h; sourceTree = "<group>"; };
+		16A072ED272653A8007A56D2 /* XZFilterMaterialModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XZFilterMaterialModel.m; sourceTree = "<group>"; };
+		16A072EE272653A8007A56D2 /* XZFilterHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XZFilterHandler.m; sourceTree = "<group>"; };
+		16A072EF272653A8007A56D2 /* XZFilterHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XZFilterHandler.h; sourceTree = "<group>"; };
+		16A072F0272653A8007A56D2 /* XZGPUImageMovieWriter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XZGPUImageMovieWriter.h; sourceTree = "<group>"; };
 		16A072F1272653A8007A56D2 /* XZSettingModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XZSettingModel.h; sourceTree = "<group>"; };
-		16A072F2272653A8007A56D2 /* SCFilterMaterialModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SCFilterMaterialModel.h; sourceTree = "<group>"; };
+		16A072F2272653A8007A56D2 /* XZFilterMaterialModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XZFilterMaterialModel.h; sourceTree = "<group>"; };
 		16A072F3272653A8007A56D2 /* XZVideoModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XZVideoModel.h; sourceTree = "<group>"; };
 		16A072F4272653A8007A56D2 /* XZSettingModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XZSettingModel.m; sourceTree = "<group>"; };
-		16A072F5272653A8007A56D2 /* SCFilterManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SCFilterManager.m; sourceTree = "<group>"; };
-		16A072F6272653A8007A56D2 /* SCFilterManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SCFilterManager.h; sourceTree = "<group>"; };
+		16A072F5272653A8007A56D2 /* XZFilterManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XZFilterManager.m; sourceTree = "<group>"; };
+		16A072F6272653A8007A56D2 /* XZFilterManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XZFilterManager.h; sourceTree = "<group>"; };
 		16A072F7272653A8007A56D2 /* XZSettingSectionModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XZSettingSectionModel.h; sourceTree = "<group>"; };
 		16A072F8272653A8007A56D2 /* XZVideoModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XZVideoModel.m; sourceTree = "<group>"; };
 		16A072F9272653A8007A56D2 /* XZCameraManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XZCameraManager.h; sourceTree = "<group>"; };
 		16A0731B27265404007A56D2 /* SCFilterCategoryView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SCFilterCategoryView.h; sourceTree = "<group>"; };
-		16A0731C27265404007A56D2 /* SCFilterMaterialView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SCFilterMaterialView.m; sourceTree = "<group>"; };
-		16A0731D27265404007A56D2 /* SCFilterMaterialView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SCFilterMaterialView.h; sourceTree = "<group>"; };
+		16A0731C27265404007A56D2 /* XZFilterMaterialView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XZFilterMaterialView.m; sourceTree = "<group>"; };
+		16A0731D27265404007A56D2 /* XZFilterMaterialView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XZFilterMaterialView.h; sourceTree = "<group>"; };
 		16A0731E27265404007A56D2 /* SCCameraTopView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SCCameraTopView.m; sourceTree = "<group>"; };
 		16A0731F27265404007A56D2 /* XZSettingCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XZSettingCell.h; sourceTree = "<group>"; };
 		16A0732027265404007A56D2 /* SCFilterBarView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SCFilterBarView.h; sourceTree = "<group>"; };
 		16A0732127265404007A56D2 /* SCFilterCategoryCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SCFilterCategoryCell.m; sourceTree = "<group>"; };
 		16A0732227265404007A56D2 /* SCFilterCategoryView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SCFilterCategoryView.m; sourceTree = "<group>"; };
-		16A0732327265404007A56D2 /* SCFilterMaterialViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SCFilterMaterialViewCell.m; sourceTree = "<group>"; };
+		16A0732327265404007A56D2 /* XZFilterMaterialViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XZFilterMaterialViewCell.m; sourceTree = "<group>"; };
 		16A0732427265404007A56D2 /* SCCapturingModeSwitchView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SCCapturingModeSwitchView.h; sourceTree = "<group>"; };
 		16A0732527265404007A56D2 /* SCFilterCategoryCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SCFilterCategoryCell.h; sourceTree = "<group>"; };
 		16A0732627265404007A56D2 /* SCCameraVideoTimeLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SCCameraVideoTimeLabel.m; sourceTree = "<group>"; };
@@ -174,7 +174,7 @@
 		16A0732A27265404007A56D2 /* SCCapturingButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SCCapturingButton.m; sourceTree = "<group>"; };
 		16A0732B27265405007A56D2 /* SCCapturingModeSwitchView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SCCapturingModeSwitchView.m; sourceTree = "<group>"; };
 		16A0732C27265405007A56D2 /* SCFilterBarView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SCFilterBarView.m; sourceTree = "<group>"; };
-		16A0732D27265405007A56D2 /* SCFilterMaterialViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SCFilterMaterialViewCell.h; sourceTree = "<group>"; };
+		16A0732D27265405007A56D2 /* XZFilterMaterialViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XZFilterMaterialViewCell.h; sourceTree = "<group>"; };
 		16A0732E27265405007A56D2 /* XZSettingCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XZSettingCell.m; sourceTree = "<group>"; };
 		16A0733927265439007A56D2 /* SCGPUImageBaseFilter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SCGPUImageBaseFilter.h; sourceTree = "<group>"; };
 		16A0733A27265439007A56D2 /* SCGPUImageBaseFilter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SCGPUImageBaseFilter.m; sourceTree = "<group>"; };
@@ -421,14 +421,14 @@
 			children = (
 				16A072F9272653A8007A56D2 /* XZCameraManager.h */,
 				16A072EA272653A8007A56D2 /* XZCameraManager.m */,
-				16A072EF272653A8007A56D2 /* SCFilterHandler.h */,
-				16A072EE272653A8007A56D2 /* SCFilterHandler.m */,
-				16A072F6272653A8007A56D2 /* SCFilterManager.h */,
-				16A072F5272653A8007A56D2 /* SCFilterManager.m */,
-				16A072F2272653A8007A56D2 /* SCFilterMaterialModel.h */,
-				16A072ED272653A8007A56D2 /* SCFilterMaterialModel.m */,
-				16A072F0272653A8007A56D2 /* SCGPUImageMovieWriter.h */,
-				16A072EB272653A8007A56D2 /* SCGPUImageMovieWriter.m */,
+				16A072EF272653A8007A56D2 /* XZFilterHandler.h */,
+				16A072EE272653A8007A56D2 /* XZFilterHandler.m */,
+				16A072F6272653A8007A56D2 /* XZFilterManager.h */,
+				16A072F5272653A8007A56D2 /* XZFilterManager.m */,
+				16A072F2272653A8007A56D2 /* XZFilterMaterialModel.h */,
+				16A072ED272653A8007A56D2 /* XZFilterMaterialModel.m */,
+				16A072F0272653A8007A56D2 /* XZGPUImageMovieWriter.h */,
+				16A072EB272653A8007A56D2 /* XZGPUImageMovieWriter.m */,
 				16A072F1272653A8007A56D2 /* XZSettingModel.h */,
 				16A072F4272653A8007A56D2 /* XZSettingModel.m */,
 				16A072F7272653A8007A56D2 /* XZSettingSectionModel.h */,
@@ -505,10 +505,10 @@
 				16A0732127265404007A56D2 /* SCFilterCategoryCell.m */,
 				16A0731B27265404007A56D2 /* SCFilterCategoryView.h */,
 				16A0732227265404007A56D2 /* SCFilterCategoryView.m */,
-				16A0731D27265404007A56D2 /* SCFilterMaterialView.h */,
-				16A0731C27265404007A56D2 /* SCFilterMaterialView.m */,
-				16A0732D27265405007A56D2 /* SCFilterMaterialViewCell.h */,
-				16A0732327265404007A56D2 /* SCFilterMaterialViewCell.m */,
+				16A0731D27265404007A56D2 /* XZFilterMaterialView.h */,
+				16A0731C27265404007A56D2 /* XZFilterMaterialView.m */,
+				16A0732D27265405007A56D2 /* XZFilterMaterialViewCell.h */,
+				16A0732327265404007A56D2 /* XZFilterMaterialViewCell.m */,
 				16A0731F27265404007A56D2 /* XZSettingCell.h */,
 				16A0732E27265405007A56D2 /* XZSettingCell.m */,
 			);
@@ -699,18 +699,18 @@
 				16A073472726545B007A56D2 /* UIView+Extention.m in Sources */,
 				16A0733227265405007A56D2 /* SCFilterCategoryView.m in Sources */,
 				16A07370272654C7007A56D2 /* SCGPUImageVertigoFilter.m in Sources */,
-				16A072FE272653A8007A56D2 /* SCFilterHandler.m in Sources */,
+				16A072FE272653A8007A56D2 /* XZFilterHandler.m in Sources */,
 				16A0737A272654E2007A56D2 /* XZViewController.m in Sources */,
 				16A0733B27265439007A56D2 /* SCGPUImageBaseFilter.m in Sources */,
 				16A072FF272653A8007A56D2 /* XZSettingModel.m in Sources */,
 				16A0738B272654FD007A56D2 /* XZAppSetting.m in Sources */,
 				16A072FA272653A8007A56D2 /* XZCameraManager.m in Sources */,
 				16A07377272654D6007A56D2 /* SCVisualEffectView.m in Sources */,
-				16A072FB272653A8007A56D2 /* SCGPUImageMovieWriter.m in Sources */,
+				16A072FB272653A8007A56D2 /* XZGPUImageMovieWriter.m in Sources */,
 				16A072DF27265355007A56D2 /* XZPhotoResultViewController+UI.m in Sources */,
 				16A072D927265355007A56D2 /* XZSettingViewController.m in Sources */,
 				16A072FC272653A8007A56D2 /* XZSettingSectionModel.m in Sources */,
-				16A07300272653A8007A56D2 /* SCFilterManager.m in Sources */,
+				16A07300272653A8007A56D2 /* XZFilterManager.m in Sources */,
 				16A07360272654A6007A56D2 /* SCGPUImageSplit1V3Filter.m in Sources */,
 				16A072E027265355007A56D2 /* XZCameraViewController+Filter.m in Sources */,
 				16A0735D272654A6007A56D2 /* SCGPUImageSplit3V3Filter.m in Sources */,
@@ -724,7 +724,7 @@
 				16A0735F272654A6007A56D2 /* SCGPUImageSplit4V4Filter.m in Sources */,
 				16A0733027265405007A56D2 /* SCCameraTopView.m in Sources */,
 				16A07373272654C7007A56D2 /* SCGPUImageShakeFilter.m in Sources */,
-				16A0733327265405007A56D2 /* SCFilterMaterialViewCell.m in Sources */,
+				16A0733327265405007A56D2 /* XZFilterMaterialViewCell.m in Sources */,
 				16A072DB27265355007A56D2 /* XZCameraViewController+TakePhoto.m in Sources */,
 				16A0733727265405007A56D2 /* SCFilterBarView.m in Sources */,
 				16A073482726545B007A56D2 /* UIButton+Extention.m in Sources */,
@@ -737,11 +737,11 @@
 				16A07374272654C7007A56D2 /* SCGPUImageShineWhiteFilter.m in Sources */,
 				16A0733827265405007A56D2 /* XZSettingCell.m in Sources */,
 				16A072DC27265355007A56D2 /* XZVideoResultViewController+UI.m in Sources */,
-				16A072FD272653A8007A56D2 /* SCFilterMaterialModel.m in Sources */,
+				16A072FD272653A8007A56D2 /* XZFilterMaterialModel.m in Sources */,
 				16A072BF27265314007A56D2 /* XZCameraViewController.m in Sources */,
 				16A07301272653A8007A56D2 /* XZVideoModel.m in Sources */,
 				16A073462726545B007A56D2 /* UIDevice+Extention.m in Sources */,
-				16A0732F27265405007A56D2 /* SCFilterMaterialView.m in Sources */,
+				16A0732F27265405007A56D2 /* XZFilterMaterialView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

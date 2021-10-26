@@ -1,5 +1,5 @@
 //
-//  SCFilterMaterialViewCell.m
+//  XZFilterMaterialViewCell.m
 //  OnePai
 //
 //  Created by zhouzhou on 2019/4/13.
@@ -9,11 +9,11 @@
 #import "SCGPUImageBaseFilter.h"
 
 #import "SCFilterHelper.h"
-#import "SCFilterManager.h"
+#import "XZFilterManager.h"
 
-#import "SCFilterMaterialViewCell.h"
+#import "XZFilterMaterialViewCell.h"
 
-@interface SCFilterMaterialViewCell ()
+@interface XZFilterMaterialViewCell ()
 
 @property (nonatomic, strong) GPUImageView *imageView;  // 用滤镜来生成封面
 @property (nonatomic, strong) UIImageView *staticImageView;  // 用图片来展示封面
@@ -25,7 +25,7 @@
 
 @end
 
-@implementation SCFilterMaterialViewCell
+@implementation XZFilterMaterialViewCell
 
 - (instancetype)initWithFrame:(CGRect)frame {
     self = [super initWithFrame:frame];
@@ -105,12 +105,12 @@
 
 #pragma mark - Custom Accessor
 
-- (void)setFilterMaterialModel:(SCFilterMaterialModel *)filterMaterialModel {
+- (void)setFilterMaterialModel:(XZFilterMaterialModel *)filterMaterialModel {
     _filterMaterialModel = filterMaterialModel;
 
     self.titleLabel.text = filterMaterialModel.filterName;
     
-    GPUImageFilter *filter = [[SCFilterManager shareManager] filterWithFilterID:filterMaterialModel.filterID];
+    GPUImageFilter *filter = [[XZFilterManager shareManager] filterWithFilterID:filterMaterialModel.filterID];
     
     if ([filter isKindOfClass:[SCGPUImageBaseFilter class]]) {
         SCGPUImageBaseFilter *baseFilter = (SCGPUImageBaseFilter *)filter;

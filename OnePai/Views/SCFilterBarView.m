@@ -9,13 +9,13 @@
 #import "SCFilterBarView.h"
 #import "SCFilterCategoryView.h"
 
-#import "SCFilterMaterialView.h"
+#import "XZFilterMaterialView.h"
 
 static CGFloat const kFilterMaterialViewHeight = 100.0f;
 
-@interface SCFilterBarView () <SCFilterMaterialViewDelegate, SCFilterCategoryViewDelegate>
+@interface SCFilterBarView () <XZFilterMaterialViewDelegate, SCFilterCategoryViewDelegate>
 
-@property (nonatomic, strong) SCFilterMaterialView *filterMaterialView;
+@property (nonatomic, strong) XZFilterMaterialView *filterMaterialView;
 @property (nonatomic, strong) SCFilterCategoryView *filterCategoryView;
 @property (nonatomic, strong) UISwitch *beautifySwitch;
 @property (nonatomic, strong) UISlider *beautifySlider;
@@ -69,7 +69,7 @@ static CGFloat const kFilterMaterialViewHeight = 100.0f;
 }
 
 - (void)setupFilterMaterialView {
-    self.filterMaterialView = [[SCFilterMaterialView alloc] init];
+    self.filterMaterialView = [[XZFilterMaterialView alloc] init];
     self.filterMaterialView.delegate = self;
     [self addSubview:self.filterMaterialView];
     [self.filterMaterialView mas_makeConstraints:^(MASConstraintMaker *make) {
@@ -145,7 +145,7 @@ static CGFloat const kFilterMaterialViewHeight = 100.0f;
 
 #pragma mark - Custom Accessor
 
-- (void)setDefaultFilterMaterials:(NSArray<SCFilterMaterialModel *> *)defaultFilterMaterials {
+- (void)setDefaultFilterMaterials:(NSArray<XZFilterMaterialModel *> *)defaultFilterMaterials {
     _defaultFilterMaterials = [defaultFilterMaterials copy];
     
     if (self.filterCategoryView.currentIndex == 0) {
@@ -153,7 +153,7 @@ static CGFloat const kFilterMaterialViewHeight = 100.0f;
     }
 }
 
-- (void)setTikTokFilterMaterials:(NSArray<SCFilterMaterialModel *> *)tikTokFilterMaterials {
+- (void)setTikTokFilterMaterials:(NSArray<XZFilterMaterialModel *> *)tikTokFilterMaterials {
     _tikTokFilterMaterials = [tikTokFilterMaterials copy];
     
     if (self.filterCategoryView.currentIndex == 1) {
@@ -161,7 +161,7 @@ static CGFloat const kFilterMaterialViewHeight = 100.0f;
     }
 }
 
-- (void)setFaceRecognizerFilterMaterials:(NSArray<SCFilterMaterialModel *> *)faceRecognizerFilterMaterials {
+- (void)setFaceRecognizerFilterMaterials:(NSArray<XZFilterMaterialModel *> *)faceRecognizerFilterMaterials {
     _faceRecognizerFilterMaterials = [faceRecognizerFilterMaterials copy];
     
     if (self.filterCategoryView.currentIndex == 2) {
@@ -169,7 +169,7 @@ static CGFloat const kFilterMaterialViewHeight = 100.0f;
     }
 }
 
-- (void)setSplitFilterMaterials:(NSArray<SCFilterMaterialModel *> *)splitFilterMaterials {
+- (void)setSplitFilterMaterials:(NSArray<XZFilterMaterialModel *> *)splitFilterMaterials {
     _splitFilterMaterials = [splitFilterMaterials copy];
     
     if (self.filterCategoryView.currentIndex == 3) {
@@ -177,9 +177,9 @@ static CGFloat const kFilterMaterialViewHeight = 100.0f;
     }
 }
 
-#pragma mark - SCFilterMaterialViewDelegate
+#pragma mark - XZFilterMaterialViewDelegate
 
-- (void)filterMaterialView:(SCFilterMaterialView *)filterMaterialView didScrollToIndex:(NSUInteger)index {
+- (void)filterMaterialView:(XZFilterMaterialView *)filterMaterialView didScrollToIndex:(NSUInteger)index {
     if ([self.delegate respondsToSelector:@selector(filterBarView:materialDidScrollToIndex:)]) {
         [self.delegate filterBarView:self materialDidScrollToIndex:index];
     }
