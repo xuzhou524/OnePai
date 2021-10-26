@@ -160,12 +160,12 @@
     }
 }
 
-#pragma mark - SCCapturingButtonDelegate
+#pragma mark - XZCapturingButtonDelegate
 
-- (void)capturingButtonDidClicked:(SCCapturingButton *)button {
-    if (self.modeSwitchView.type == SCCapturingModeSwitchTypeImage) {
+- (void)capturingButtonDidClicked:(XZCapturingButton *)button {
+    if (self.modeSwitchView.type == XZCapturingModeSwitchTypeImage) {
         [self takePhoto];
-    } else if (self.modeSwitchView.type == SCCapturingModeSwitchTypeVideo) {
+    } else if (self.modeSwitchView.type == XZCapturingModeSwitchTypeVideo) {
         if (self.isRecordingVideo) {
             [self stopRecordVideo];
         } else {
@@ -174,9 +174,9 @@
     }
 }
 
-#pragma mark - SCFilterBarViewDelegate
+#pragma mark - XZFilterBarViewDelegate
 
-- (void)filterBarView:(SCFilterBarView *)filterBarView categoryDidScrollToIndex:(NSUInteger)index {
+- (void)filterBarView:(XZFilterBarView *)filterBarView categoryDidScrollToIndex:(NSUInteger)index {
     if (index == 0 && !self.filterBarView.defaultFilterMaterials) {
         self.filterBarView.defaultFilterMaterials = self.defaultFilterMaterials;
     } else if (index == 1 && !self.filterBarView.tikTokFilterMaterials) {
@@ -188,14 +188,14 @@
     }
 }
 
-- (void)filterBarView:(SCFilterBarView *)filterBarView materialDidScrollToIndex:(NSUInteger)index {
+- (void)filterBarView:(XZFilterBarView *)filterBarView materialDidScrollToIndex:(NSUInteger)index {
     NSArray<XZFilterMaterialModel *> *models = [self filtersWithCategoryIndex:self.filterBarView.currentCategoryIndex];
     
     XZFilterMaterialModel *model = models[index];
     [[XZCameraManager shareManager].currentFilterHandler setEffectFilter:[[XZFilterManager shareManager] filterWithFilterID:model.filterID]];
 }
 
-- (void)filterBarView:(SCFilterBarView *)filterBarView beautifySwitchIsOn:(BOOL)isOn {
+- (void)filterBarView:(XZFilterBarView *)filterBarView beautifySwitchIsOn:(BOOL)isOn {
     if (isOn) {
         [self addBeautifyFilter];
     } else {
@@ -203,7 +203,7 @@
     }
 }
 
-- (void)filterBarView:(SCFilterBarView *)filterBarView beautifySliderChangeToValue:(CGFloat)value {
+- (void)filterBarView:(XZFilterBarView *)filterBarView beautifySliderChangeToValue:(CGFloat)value {
     [XZCameraManager shareManager].currentFilterHandler.beautifyFilterDegree = value;
 }
 
@@ -217,9 +217,9 @@
     return YES;
 }
 
-#pragma mark - SCCameraTopViewDelegate
+#pragma mark - XZCameraTopViewDelegate
 
-- (void)cameraTopViewDidClickRotateButton:(SCCameraTopView *)cameraTopView {
+- (void)cameraTopViewDidClickRotateButton:(XZCameraTopView *)cameraTopView {
     dispatch_async(dispatch_get_main_queue(), ^{
         XZCameraManager *cameraManager = [XZCameraManager shareManager];
         [cameraManager rotateCamera];
@@ -235,14 +235,14 @@
     });
 }
 
-- (void)cameraTopViewDidClickFlashButton:(SCCameraTopView *)cameraTopView {
+- (void)cameraTopViewDidClickFlashButton:(XZCameraTopView *)cameraTopView {
     SCCameraFlashMode mode = [XZCameraManager shareManager].flashMode;
     mode = (mode + 1) % 4;
     [XZCameraManager shareManager].flashMode = mode;
     [self updateFlashButtonWithFlashMode:mode];
 }
 
-- (void)cameraTopViewDidClickRatioButton:(SCCameraTopView *)cameraTopView {
+- (void)cameraTopViewDidClickRatioButton:(XZCameraTopView *)cameraTopView {
     if (self.isChangingRatio) {
         return;
     }
@@ -261,12 +261,12 @@
     [self updateDarkOrNormalModeWithRatio:nextRatio];
 }
 
-- (void)cameraTopViewDidClickCloseButton:(SCCameraTopView *)cameraTopView {
+- (void)cameraTopViewDidClickCloseButton:(XZCameraTopView *)cameraTopView {
     [self.videos removeAllObjects];
     [self refreshUIWhenRecordVideo];
 }
 
-- (void)cameraTopViewDidClickSettingButton:(SCCameraTopView *)cameraTopView {
+- (void)cameraTopViewDidClickSettingButton:(XZCameraTopView *)cameraTopView {
     UINavigationController *navigationVC = [[UINavigationController alloc] initWithRootViewController:[[XZSettingViewController alloc] init]];
     navigationVC.modalPresentationStyle = UIModalPresentationFullScreen;
     [self presentViewController:navigationVC
@@ -274,10 +274,10 @@
                      completion:NULL];
 }
 
-#pragma mark - SCCapturingModeSwitchViewDelegate
+#pragma mark - XZCapturingModeSwitchViewDelegate
 
-- (void)capturingModeSwitchView:(SCCapturingModeSwitchView *)view
-                didChangeToType:(SCCapturingModeSwitchType)type {
+- (void)capturingModeSwitchView:(XZCapturingModeSwitchView *)view
+                didChangeToType:(XZCapturingModeSwitchType)type {
 }
 
 @end

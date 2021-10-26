@@ -1,16 +1,16 @@
 //
-//  SCFilterCategoryCell.m
+//  XZFilterCategoryCell.m
 //  OnePai
 //
 //  Created by zhouzhou on 2019/6/1.
 //  Copyright © 2019年 zhouzhou. All rights reserved.
 //
 
-#import "SCFilterCategoryCell.h"
+#import "XZFilterCategoryCell.h"
 
 static NSInteger kFilterCategoryCellBottomLineHeight = 2;
 
-@implementation SCFilterCategoryCell
+@implementation XZFilterCategoryCell
 
 - (instancetype)init {
     

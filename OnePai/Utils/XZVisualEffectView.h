@@ -1,5 +1,5 @@
 //
-//  SCVisualEffectView.h
+//  XZVisualEffectView.h
 //  OnePai
 //
 //  Created by Lyman on 2019/6/1.
@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface SCVisualEffectView : UIVisualEffectView
+@interface XZVisualEffectView : UIVisualEffectView
 
 @property (nonatomic) CGFloat grayscaleTintLevel;
 @property (nonatomic) CGFloat grayscaleTintAlpha;

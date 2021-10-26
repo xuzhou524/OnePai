@@ -7,12 +7,12 @@
 //
 
 #import <GPUImage.h>
-#import "SCCapturingButton.h"
-#import "SCFilterBarView.h"
-#import "SCCameraTopView.h"
-#import "SCCapturingModeSwitchView.h"
-#import "SCVisualEffectView.h"
-#import "SCCameraVideoTimeLabel.h"
+#import "XZCapturingButton.h"
+#import "XZFilterBarView.h"
+#import "XZCameraTopView.h"
+#import "XZCapturingModeSwitchView.h"
+#import "XZVisualEffectView.h"
+#import "XZCameraVideoTimeLabel.h"
 
 #import "XZCameraManager.h"
 #import "XZFilterManager.h"
@@ -28,23 +28,23 @@
 #import "XZCameraViewController.h"
 
 @interface XZCameraViewController () <
-    SCCapturingButtonDelegate,
-    SCFilterBarViewDelegate,
-    SCCameraTopViewDelegate,
-    SCCapturingModeSwitchViewDelegate,
+    XZCapturingButtonDelegate,
+    XZFilterBarViewDelegate,
+    XZCameraTopViewDelegate,
+    XZCapturingModeSwitchViewDelegate,
     UIGestureRecognizerDelegate>
 
 @property (nonatomic, strong) GPUImageView *cameraView;
 
-@property (nonatomic, strong) SCCapturingButton *capturingButton;
-@property (nonatomic, strong) SCFilterBarView *filterBarView;
+@property (nonatomic, strong) XZCapturingButton *capturingButton;
+@property (nonatomic, strong) XZFilterBarView *filterBarView;
 @property (nonatomic, strong) UIButton *filterButton;
 @property (nonatomic, strong) UIButton *nextButton;
-@property (nonatomic, strong) SCCameraTopView *cameraTopView;
-@property (nonatomic, strong) SCCapturingModeSwitchView *modeSwitchView;
-@property (nonatomic, strong) SCCameraVideoTimeLabel *videoTimeLabel;
+@property (nonatomic, strong) XZCameraTopView *cameraTopView;
+@property (nonatomic, strong) XZCapturingModeSwitchView *modeSwitchView;
+@property (nonatomic, strong) XZCameraVideoTimeLabel *videoTimeLabel;
 @property (nonatomic, strong) UIView *cameraFocusView;  // 聚焦框
-@property (nonatomic, strong) SCVisualEffectView *ratioBlurView;  // 切换比例的时候的模糊蒙层
+@property (nonatomic, strong) XZVisualEffectView *ratioBlurView;  // 切换比例的时候的模糊蒙层
 
 @property (nonatomic, assign) BOOL isRecordingVideo;  // 是否正在录制视频
 @property (nonatomic, assign) BOOL isChangingRatio;  // 是否正在改变比例

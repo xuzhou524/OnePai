@@ -47,7 +47,7 @@ static CGFloat const kFilterBarViewHeight = 200.0f;  // 滤镜栏高度
 }
 
 - (void)setupCapturingButton {
-    self.capturingButton = [[SCCapturingButton alloc] init];
+    self.capturingButton = [[XZCapturingButton alloc] init];
     self.capturingButton.delegate = self;
     [self.view addSubview:self.capturingButton];
     [self.capturingButton mas_makeConstraints:^(MASConstraintMaker *make) {
@@ -106,7 +106,7 @@ static CGFloat const kFilterBarViewHeight = 200.0f;  // 滤镜栏高度
 }
 
 - (void)setupFilterBarView {
-    self.filterBarView = [[SCFilterBarView alloc] initWithFrame:CGRectMake(0, self.view.frame.size.height, self.view.frame.size.width, 0)];
+    self.filterBarView = [[XZFilterBarView alloc] initWithFrame:CGRectMake(0, self.view.frame.size.height, self.view.frame.size.width, 0)];
     self.filterBarView.delegate = self;
     self.filterBarView.showing = NO;
     [self.view addSubview:self.filterBarView];
@@ -118,7 +118,7 @@ static CGFloat const kFilterBarViewHeight = 200.0f;  // 滤镜栏高度
 }
 
 - (void)setupCameraTopView {
-    self.cameraTopView = [[SCCameraTopView alloc] init];
+    self.cameraTopView = [[XZCameraTopView alloc] init];
     self.cameraTopView.delegate = self;
     [self.view addSubview:self.cameraTopView];
     [self.cameraTopView mas_makeConstraints:^(MASConstraintMaker *make) {
@@ -135,7 +135,7 @@ static CGFloat const kFilterBarViewHeight = 200.0f;  // 滤镜栏高度
 }
 
 - (void)setupModeSwitchView {
-    self.modeSwitchView = [[SCCapturingModeSwitchView alloc] init];
+    self.modeSwitchView = [[XZCapturingModeSwitchView alloc] init];
     self.modeSwitchView.delegate = self;
     [self.view addSubview:self.modeSwitchView];
     [self.modeSwitchView mas_makeConstraints:^(MASConstraintMaker *make) {
@@ -160,7 +160,7 @@ static CGFloat const kFilterBarViewHeight = 200.0f;  // 滤镜栏高度
 }
 
 - (void)setupRatioBlurView {
-    self.ratioBlurView = [[SCVisualEffectView alloc] init];
+    self.ratioBlurView = [[XZVisualEffectView alloc] init];
     self.ratioBlurView.blurRadius = 50;
     self.ratioBlurView.hidden = YES;
     [self.view insertSubview:self.ratioBlurView aboveSubview:self.cameraView];
@@ -170,7 +170,7 @@ static CGFloat const kFilterBarViewHeight = 200.0f;  // 滤镜栏高度
 }
 
 - (void)setupVideoTimeLabel {
-    self.videoTimeLabel = [[SCCameraVideoTimeLabel alloc] init];
+    self.videoTimeLabel = [[XZCameraVideoTimeLabel alloc] init];
     self.videoTimeLabel.alpha = 0;
     [self.view addSubview:self.videoTimeLabel];
     [self.videoTimeLabel mas_makeConstraints:^(MASConstraintMaker *make) {

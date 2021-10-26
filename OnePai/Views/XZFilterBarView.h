@@ -1,5 +1,5 @@
 //
-//  SCFilterBarView.h
+//  XZFilterBarView.h
 //  OnePai
 //
 //  Created by zhouzhou on 2019/4/13.
@@ -10,21 +10,21 @@
 
 #import "XZFilterMaterialModel.h"
 
-@class SCFilterBarView;
+@class XZFilterBarView;
 
-@protocol SCFilterBarViewDelegate <NSObject>
+@protocol XZFilterBarViewDelegate <NSObject>
 
-- (void)filterBarView:(SCFilterBarView *)filterBarView categoryDidScrollToIndex:(NSUInteger)index;
-- (void)filterBarView:(SCFilterBarView *)filterBarView materialDidScrollToIndex:(NSUInteger)index;
-- (void)filterBarView:(SCFilterBarView *)filterBarView beautifySwitchIsOn:(BOOL)isOn;
-- (void)filterBarView:(SCFilterBarView *)filterBarView beautifySliderChangeToValue:(CGFloat)value;
+- (void)filterBarView:(XZFilterBarView *)filterBarView categoryDidScrollToIndex:(NSUInteger)index;
+- (void)filterBarView:(XZFilterBarView *)filterBarView materialDidScrollToIndex:(NSUInteger)index;
+- (void)filterBarView:(XZFilterBarView *)filterBarView beautifySwitchIsOn:(BOOL)isOn;
+- (void)filterBarView:(XZFilterBarView *)filterBarView beautifySliderChangeToValue:(CGFloat)value;
 
 @end
 
-@interface SCFilterBarView : UIView
+@interface XZFilterBarView : UIView
 
 @property (nonatomic, assign) BOOL showing;
-@property (nonatomic, weak) id <SCFilterBarViewDelegate> delegate;
+@property (nonatomic, weak) id <XZFilterBarViewDelegate> delegate;
 
 /// 内置滤镜
 @property (nonatomic, copy) NSArray<XZFilterMaterialModel *> *defaultFilterMaterials;

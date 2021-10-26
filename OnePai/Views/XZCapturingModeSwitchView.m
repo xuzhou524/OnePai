@@ -1,23 +1,23 @@
 //
-//  SCCapturingModeSwitchView.m
+//  XZCapturingModeSwitchView.m
 //  OnePai
 //
 //  Created by zhouzhou on 2019/5/18.
 //  Copyright © 2019年 zhouzhou. All rights reserved.
 //
 
-#import "SCCapturingModeSwitchView.h"
+#import "XZCapturingModeSwitchView.h"
 
-@interface SCCapturingModeSwitchView ()
+@interface XZCapturingModeSwitchView ()
 
-@property (nonatomic, assign, readwrite) SCCapturingModeSwitchType type;
+@property (nonatomic, assign, readwrite) XZCapturingModeSwitchType type;
 
 @property (nonatomic, strong) UILabel *imageLabel;
 @property (nonatomic, strong) UILabel *videoLabel;
 
 @end
 
-@implementation SCCapturingModeSwitchView
+@implementation XZCapturingModeSwitchView
 
 - (instancetype)initWithFrame:(CGRect)frame {
     self = [super initWithFrame:frame];
@@ -77,14 +77,14 @@
     [self.videoLabel addGestureRecognizer:videoTap];
 }
 
-- (void)selectType:(SCCapturingModeSwitchType)type {
+- (void)selectType:(XZCapturingModeSwitchType)type {
     if (self.type == type) {
         return;
     }
     self.type = type;
     UILabel *selectedLabel = nil;
     UILabel *normalLabel = nil;
-    if (self.type == SCCapturingModeSwitchTypeImage) {
+    if (self.type == XZCapturingModeSwitchTypeImage) {
         selectedLabel = self.imageLabel;
         normalLabel = self.videoLabel;
     } else {
@@ -102,7 +102,7 @@
 - (void)updateDarkMode {
     UILabel *selectedLabel = nil;
     UILabel *normalLabel = nil;
-    if (self.type == SCCapturingModeSwitchTypeImage) {
+    if (self.type == XZCapturingModeSwitchTypeImage) {
         selectedLabel = self.imageLabel;
         normalLabel = self.videoLabel;
     } else {
@@ -122,11 +122,11 @@
 #pragma mark - Action
 
 - (void)imageTapAciton {
-    [self selectType:SCCapturingModeSwitchTypeImage];
+    [self selectType:XZCapturingModeSwitchTypeImage];
 }
 
 - (void)videoTapAction {
-    [self selectType:SCCapturingModeSwitchTypeVideo];
+    [self selectType:XZCapturingModeSwitchTypeVideo];
 }
 
 @end

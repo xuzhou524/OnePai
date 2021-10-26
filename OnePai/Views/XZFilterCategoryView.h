@@ -1,5 +1,5 @@
 //
-//  SCFilterCategoryView.h
+//  XZFilterCategoryView.h
 //  OnePai
 //
 //  Created by zhouzhou on 2019/6/1.
@@ -8,16 +8,16 @@
 
 #import <UIKit/UIKit.h>
 
-@class SCFilterCategoryView;
+@class XZFilterCategoryView;
 
-@protocol SCFilterCategoryViewDelegate <NSObject>
+@protocol XZFilterCategoryViewDelegate <NSObject>
 
-- (void)filterCategoryView:(SCFilterCategoryView *)filterCategoryView
+- (void)filterCategoryView:(XZFilterCategoryView *)filterCategoryView
           didScrollToIndex:(NSUInteger)index;
 
 @end
 
-@interface SCFilterCategoryView : UIView
+@interface XZFilterCategoryView : UIView
 
 @property (nonatomic, assign) CGFloat itemWidth;
 @property (nonatomic, strong) UIFont *itemFont;
@@ -30,7 +30,7 @@
 
 @property (nonatomic, strong) NSArray <NSString *> *itemList;
 
-@property (nonatomic, weak) id<SCFilterCategoryViewDelegate> delegate;
+@property (nonatomic, weak) id<XZFilterCategoryViewDelegate> delegate;
 
 - (void)scrollToIndex:(NSUInteger)index;
 

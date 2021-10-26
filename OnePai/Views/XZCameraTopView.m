@@ -1,14 +1,14 @@
 //
-//  SCCameraTopView.m
+//  XZCameraTopView.m
 //  OnePai
 //
 //  Created by zhouzhou on 2019/5/15.
 //  Copyright © 2019年 zhouzhou. All rights reserved.
 //
 
-#import "SCCameraTopView.h"
+#import "XZCameraTopView.h"
 
-@interface SCCameraTopView ()
+@interface XZCameraTopView ()
 
 @property (nonatomic, strong, readwrite) UIButton *rotateButton;
 @property (nonatomic, strong, readwrite) UIButton *flashButton;
@@ -20,7 +20,7 @@
 
 @end
 
-@implementation SCCameraTopView
+@implementation XZCameraTopView
 
 - (instancetype)initWithFrame:(CGRect)frame {
     self = [super initWithFrame:frame];

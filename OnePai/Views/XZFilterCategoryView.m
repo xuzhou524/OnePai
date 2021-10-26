@@ -1,18 +1,18 @@
 //
-//  SCFilterCategoryView.m
+//  XZFilterCategoryView.m
 //  OnePai
 //
 //  Created by zhouzhou on 2019/6/1.
 //  Copyright © 2019年 zhouzhou. All rights reserved.
 //
 
-#import "SCFilterCategoryCell.h"
+#import "XZFilterCategoryCell.h"
 
-#import "SCFilterCategoryView.h"
+#import "XZFilterCategoryView.h"
 
 static NSString * const kFilterCategoryReuseIdentifier = @"kFilterCategoryReuseIdentifier";
 
-@interface SCFilterCategoryView () <UICollectionViewDelegate, UICollectionViewDataSource>
+@interface XZFilterCategoryView () <UICollectionViewDelegate, UICollectionViewDataSource>
 
 @property (nonatomic, strong) UICollectionView *collectionView;
 @property (nonatomic, strong) UICollectionViewFlowLayout *collectionViewLayout;
@@ -21,7 +21,7 @@ static NSString * const kFilterCategoryReuseIdentifier = @"kFilterCategoryReuseI
 
 @end
 
-@implementation SCFilterCategoryView
+@implementation XZFilterCategoryView
 
 - (instancetype)initWithFrame:(CGRect)frame {
     
@@ -102,7 +102,7 @@ static NSString * const kFilterCategoryReuseIdentifier = @"kFilterCategoryReuseI
     _collectionView.dataSource = self;
     _collectionView.showsVerticalScrollIndicator = NO;
     _collectionView.showsHorizontalScrollIndicator = NO;
-    [_collectionView registerClass:[SCFilterCategoryCell class] forCellWithReuseIdentifier:kFilterCategoryReuseIdentifier];
+    [_collectionView registerClass:[XZFilterCategoryCell class] forCellWithReuseIdentifier:kFilterCategoryReuseIdentifier];
 }
 
 - (void)createCollectionViewLayout {
@@ -155,7 +155,7 @@ static NSString * const kFilterCategoryReuseIdentifier = @"kFilterCategoryReuseI
 
 - (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath {
     
-    SCFilterCategoryCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:kFilterCategoryReuseIdentifier forIndexPath:indexPath];
+    XZFilterCategoryCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:kFilterCategoryReuseIdentifier forIndexPath:indexPath];
     
     // 配置样式
     UILabel *label = cell.titleLabel;

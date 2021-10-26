@@ -1,5 +1,5 @@
 //
-//  SCCameraTopView.h
+//  XZCameraTopView.h
 //  OnePai
 //
 //  Created by zhouzhou on 2019/5/15.
@@ -8,19 +8,19 @@
 
 #import <UIKit/UIKit.h>
 
-@class SCCameraTopView;
+@class XZCameraTopView;
 
-@protocol SCCameraTopViewDelegate <NSObject>
+@protocol XZCameraTopViewDelegate <NSObject>
 
-- (void)cameraTopViewDidClickRotateButton:(SCCameraTopView *)cameraTopView;
-- (void)cameraTopViewDidClickFlashButton:(SCCameraTopView *)cameraTopView;
-- (void)cameraTopViewDidClickRatioButton:(SCCameraTopView *)cameraTopView;
-- (void)cameraTopViewDidClickCloseButton:(SCCameraTopView *)cameraTopView;
-- (void)cameraTopViewDidClickSettingButton:(SCCameraTopView *)cameraTopView;
+- (void)cameraTopViewDidClickRotateButton:(XZCameraTopView *)cameraTopView;
+- (void)cameraTopViewDidClickFlashButton:(XZCameraTopView *)cameraTopView;
+- (void)cameraTopViewDidClickRatioButton:(XZCameraTopView *)cameraTopView;
+- (void)cameraTopViewDidClickCloseButton:(XZCameraTopView *)cameraTopView;
+- (void)cameraTopViewDidClickSettingButton:(XZCameraTopView *)cameraTopView;
 
 @end
 
-@interface SCCameraTopView : UIView
+@interface XZCameraTopView : UIView
 
 @property (nonatomic, strong, readonly) UIButton *rotateButton;  // 切换前后置按钮
 @property (nonatomic, strong, readonly) UIButton *flashButton;  // 闪光灯按钮
@@ -28,6 +28,6 @@
 @property (nonatomic, strong, readonly) UIButton *closeButton;  // 关闭按钮
 @property (nonatomic, strong, readonly) UIButton *settingButton;  // 设置按钮
 
-@property (nonatomic, weak) id <SCCameraTopViewDelegate> delegate;
+@property (nonatomic, weak) id <XZCameraTopViewDelegate> delegate;
 
 @end

@@ -1,28 +1,28 @@
 //
-//  SCFilterBarView.m
+//  XZFilterBarView.m
 //  OnePai
 //
 //  Created by zhouzhou on 2019/4/13.
 //  Copyright © 2019年 zhouzhou. All rights reserved.
 //
 
-#import "SCFilterBarView.h"
-#import "SCFilterCategoryView.h"
+#import "XZFilterBarView.h"
+#import "XZFilterCategoryView.h"
 
 #import "XZFilterMaterialView.h"
 
 static CGFloat const kFilterMaterialViewHeight = 100.0f;
 
-@interface SCFilterBarView () <XZFilterMaterialViewDelegate, SCFilterCategoryViewDelegate>
+@interface XZFilterBarView () <XZFilterMaterialViewDelegate, XZFilterBarViewDelegate>
 
 @property (nonatomic, strong) XZFilterMaterialView *filterMaterialView;
-@property (nonatomic, strong) SCFilterCategoryView *filterCategoryView;
+@property (nonatomic, strong) XZFilterCategoryView *filterCategoryView;
 @property (nonatomic, strong) UISwitch *beautifySwitch;
 @property (nonatomic, strong) UISlider *beautifySlider;
 
 @end
 
-@implementation SCFilterBarView
+@implementation XZFilterBarView
 
 - (instancetype)initWithFrame:(CGRect)frame {
     self = [super initWithFrame:frame];
@@ -52,7 +52,7 @@ static CGFloat const kFilterMaterialViewHeight = 100.0f;
 }
 
 - (void)setupFilterCategoryView {
-    self.filterCategoryView = [[SCFilterCategoryView alloc] init];
+    self.filterCategoryView = [[XZFilterCategoryView alloc] init];
     self.filterCategoryView.delegate = self;
     self.filterCategoryView.itemNormalColor = [UIColor whiteColor];
     self.filterCategoryView.itemSelectColor = ThemeColor;
@@ -185,9 +185,9 @@ static CGFloat const kFilterMaterialViewHeight = 100.0f;
     }
 }
 
-#pragma mark - SCFilterCategoryViewDelegate
+#pragma mark - XZFilterCategoryViewDelegate
 
-- (void)filterCategoryView:(SCFilterCategoryView *)filterCategoryView didScrollToIndex:(NSUInteger)index {
+- (void)filterCategoryView:(XZFilterCategoryView *)filterCategoryView didScrollToIndex:(NSUInteger)index {
     NSInteger currentIndex = filterCategoryView.currentIndex;
     if (currentIndex == 0) {
         self.filterMaterialView.itemList = self.defaultFilterMaterials;

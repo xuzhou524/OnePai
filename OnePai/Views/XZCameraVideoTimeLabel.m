@@ -1,5 +1,5 @@
 //
-//  SCCameraVideoTimeLabel.m
+//  XZCameraVideoTimeLabel.m
 //  OnePai
 //
 //  Created by Lyman on 2019/6/3.
@@ -8,15 +8,15 @@
 
 #import "SCTimeHelper.h"
 
-#import "SCCameraVideoTimeLabel.h"
+#import "XZCameraVideoTimeLabel.h"
 
-@interface SCCameraVideoTimeLabel ()
+@interface XZCameraVideoTimeLabel ()
 
 @property (nonatomic, strong) UILabel *timeLabel;
 
 @end
 
-@implementation SCCameraVideoTimeLabel
+@implementation XZCameraVideoTimeLabel
 
 - (instancetype)initWithFrame:(CGRect)frame {
     self = [super initWithFrame:frame];

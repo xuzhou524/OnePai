@@ -1,20 +1,20 @@
 //
-//  SCCapturingButton.m
+//  XZCapturingButton.m
 //  OnePai
 //
 //  Created by zhouzhou on 2019/4/6.
 //  Copyright © 2019年 zhouzhou. All rights reserved.
 //
 
-#import "SCCapturingButton.h"
+#import "XZCapturingButton.h"
 
-@interface SCCapturingButton ()
+@interface XZCapturingButton ()
 
 @property (nonatomic, strong) UIView *recordStopView;  // 录制视频暂停控件
 
 @end
 
-@implementation SCCapturingButton
+@implementation XZCapturingButton
 
 - (instancetype)initWithFrame:(CGRect)frame {
     self = [super initWithFrame:frame];
@@ -37,7 +37,7 @@
 #pragma mark - Private
 
 - (void)commonInit {
-    self.capturingState = SCCapturingButtonStateNormal;
+    self.capturingState = XZCapturingButtonStateNormal;
     [self setupUI];
     [self addActions];
 }
@@ -67,10 +67,10 @@
 
 #pragma mark - Custom Accessor
 
-- (void)setCapturingState:(SCCapturingButtonState)capturingState {
+- (void)setCapturingState:(XZCapturingButtonState)capturingState {
     _capturingState = capturingState;
     
-    [self.recordStopView setHidden:capturingState == SCCapturingButtonStateNormal
+    [self.recordStopView setHidden:capturingState == XZCapturingButtonStateNormal
                           animated:YES
                         completion:NULL];
 }

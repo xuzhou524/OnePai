@@ -1,20 +1,20 @@
 //
-//  SCVisualEffectView.m
+//  XZVisualEffectView.m
 //  OnePai
 //
 //  Created by Lyman on 2019/6/1.
 //  Copyright © 2019 zhouzhou. All rights reserved.
 //
 
-#import "SCVisualEffectView.h"
+#import "XZVisualEffectView.h"
 
-@interface SCVisualEffectView ()
+@interface XZVisualEffectView ()
 
 @property (strong, nonatomic) UIBlurEffect *blurEffect;
 
 @end
 
-@implementation SCVisualEffectView
+@implementation XZVisualEffectView
 
 - (instancetype)initWithEffect:(UIVisualEffect *)effect {
     self = [super initWithEffect:effect];

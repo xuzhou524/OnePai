@@ -1,5 +1,5 @@
 //
-//  SCFilterCategoryCell.h
+//  XZFilterCategoryCell.h
 //  OnePai
 //
 //  Created by zhouzhou on 2019/6/1.
@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface SCFilterCategoryCell : UICollectionViewCell
+@interface XZFilterCategoryCell : UICollectionViewCell
 
 @property (nonatomic, strong) UILabel *titleLabel;
 @property (nonatomic, strong) UIView *bottomLine;
