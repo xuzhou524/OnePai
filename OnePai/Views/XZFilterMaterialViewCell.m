@@ -6,9 +6,9 @@
 //  Copyright © 2019年 zhouzhou. All rights reserved.
 //
 
-#import "SCGPUImageBaseFilter.h"
+#import "XZGPUImageBaseFilter.h"
 
-#import "SCFilterHelper.h"
+#import "XZFilterHelper.h"
 #import "XZFilterManager.h"
 
 #import "XZFilterMaterialViewCell.h"
@@ -112,8 +112,8 @@
     
     GPUImageFilter *filter = [[XZFilterManager shareManager] filterWithFilterID:filterMaterialModel.filterID];
     
-    if ([filter isKindOfClass:[SCGPUImageBaseFilter class]]) {
-        SCGPUImageBaseFilter *baseFilter = (SCGPUImageBaseFilter *)filter;
+    if ([filter isKindOfClass:[XZGPUImageBaseFilter class]]) {
+        XZGPUImageBaseFilter *baseFilter = (XZGPUImageBaseFilter *)filter;
         // 是否只需要设置静态的图片
         NSString *imageName = [baseFilter coverImageName];
         if (imageName) {

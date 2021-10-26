@@ -1,5 +1,5 @@
 //
-//  SCTimeHelper.h
+//  XZTimeHelper.h
 //  OnePai
 //
 //  Created by Lyman on 2019/6/3.
@@ -8,7 +8,7 @@
 
 #import <Foundation/Foundation.h>
 
-@interface SCTimeHelper : NSObject
+@interface XZTimeHelper : NSObject
 
 /// 将时间戳转化为 12:59:59 格式
 + (NSString *)timeStringWithTimestamp:(NSInteger)timestamp;

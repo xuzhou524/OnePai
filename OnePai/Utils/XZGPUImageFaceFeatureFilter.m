@@ -1,5 +1,5 @@
 //
-//  SCGPUImageFaceFeatureFilter.m
+//  XZGPUImageFaceFeatureFilter.m
 //  OnePai
 //
 //  Created by zhouzhou on 2019/6/9.
@@ -8,7 +8,7 @@
 
 #import "XZFaceDetectorManager.h"
 
-#import "SCGPUImageFaceFeatureFilter.h"
+#import "XZGPUImageFaceFeatureFilter.h"
 
 NSString *const kGPUImageFaceFeatureVertexShaderString = SHADER_STRING
 (
@@ -49,14 +49,14 @@ NSString *const kGPUImageFaceFeatureFragmentShaderString = SHADER_STRING
  }
 );
 
-@interface SCGPUImageFaceFeatureFilter ()
+@interface XZGPUImageFaceFeatureFilter ()
 
 @property (nonatomic, assign) GLint isPointUniform;
 @property (nonatomic, assign) GLint pointSizeUniform;
 
 @end
 
-@implementation SCGPUImageFaceFeatureFilter
+@implementation XZGPUImageFaceFeatureFilter
 
 - (instancetype)init {
     self = [super initWithVertexShaderFromString:kGPUImageFaceFeatureVertexShaderString

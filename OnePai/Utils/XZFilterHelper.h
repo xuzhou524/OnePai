@@ -1,5 +1,5 @@
 //
-//  SCFilterHelper.h
+//  XZFilterHelper.h
 //  OnePai
 //
 //  Created by zhouzhou on 2019/4/13.
@@ -9,7 +9,7 @@
 #import <GPUImage.h>
 #import <Foundation/Foundation.h>
 
-@interface SCFilterHelper : NSObject
+@interface XZFilterHelper : NSObject
 
 /**
  给图片上滤镜效果

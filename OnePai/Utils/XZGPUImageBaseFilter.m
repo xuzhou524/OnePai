@@ -1,14 +1,14 @@
 //
-//  SCGPUImageBaseFilter.m
+//  XZGPUImageBaseFilter.m
 //  OnePai
 //
 //  Created by zhouzhou on 2019/6/1.
 //  Copyright © 2019年 zhouzhou. All rights reserved.
 //
 
-#import "SCGPUImageBaseFilter.h"
+#import "XZGPUImageBaseFilter.h"
 
-@implementation SCGPUImageBaseFilter
+@implementation XZGPUImageBaseFilter
 
 - (id)initWithVertexShaderFromString:(NSString *)vertexShaderString
             fragmentShaderFromString:(NSString *)fragmentShaderString {

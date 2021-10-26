@@ -6,8 +6,8 @@
 //  Copyright © 2019年 zhouzhou. All rights reserved.
 //
 
-#import "SCGPUImageBaseFilter.h"
+#import "XZGPUImageBaseFilter.h"
 
-@interface SCGPUImageShakeFilter : SCGPUImageBaseFilter
+@interface SCGPUImageShakeFilter : XZGPUImageBaseFilter
 
 @end

@@ -1,5 +1,5 @@
 //
-//  SCGPUImageBaseFilter.h
+//  XZGPUImageBaseFilter.h
 //  OnePai
 //
 //  Created by zhouzhou on 2019/6/1.
@@ -8,7 +8,7 @@
 
 #import "GPUImageFilter.h"
 
-@interface SCGPUImageBaseFilter : GPUImageFilter
+@interface XZGPUImageBaseFilter : GPUImageFilter
 
 @property (nonatomic, assign) GLint timeUniform;
 @property (nonatomic, assign) CGFloat time;

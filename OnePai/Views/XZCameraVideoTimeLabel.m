@@ -6,7 +6,7 @@
 //  Copyright © 2019 zhouzhou. All rights reserved.
 //
 
-#import "SCTimeHelper.h"
+#import "XZTimeHelper.h"
 
 #import "XZCameraVideoTimeLabel.h"
 
@@ -69,7 +69,7 @@
 }
 
 - (void)updateTimeLabel {
-    self.timeLabel.text = [SCTimeHelper timeStringWithTimestamp:self.timestamp];
+    self.timeLabel.text = [XZTimeHelper timeStringWithTimestamp:self.timestamp];
 }
 
 

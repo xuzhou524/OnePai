@@ -7,7 +7,7 @@
 //
 
 #import "LFGPUImageBeautyFilter.h"
-#import "SCGPUImageBaseFilter.h"
+#import "XZGPUImageBaseFilter.h"
 
 #import "XZFilterHandler.h"
 
@@ -88,8 +88,8 @@
     self.currentEffectFilter = filter;
     
     // 记录应用的时间
-    if ([filter isKindOfClass:[SCGPUImageBaseFilter class]]) {
-        ((SCGPUImageBaseFilter *)filter).beginTime = self.displayLink.timestamp;
+    if ([filter isKindOfClass:[XZGPUImageBaseFilter class]]) {
+        ((XZGPUImageBaseFilter *)filter).beginTime = self.displayLink.timestamp;
     }
 }
 
@@ -125,8 +125,8 @@
     _facesPoints = facesPoints;
     
     for (GPUImageFilter *filter in self.filters) {
-        if ([filter isKindOfClass:[SCGPUImageBaseFilter class]]) {
-            ((SCGPUImageBaseFilter *)filter).facesPoints = facesPoints;
+        if ([filter isKindOfClass:[XZGPUImageBaseFilter class]]) {
+            ((XZGPUImageBaseFilter *)filter).facesPoints = facesPoints;
         }
     }
 }
@@ -135,8 +135,8 @@
     _facesPointCount = facesPointCount;
     
     for (GPUImageFilter *filter in self.filters) {
-        if ([filter isKindOfClass:[SCGPUImageBaseFilter class]]) {
-            ((SCGPUImageBaseFilter *)filter).facesPointCount = facesPointCount;
+        if ([filter isKindOfClass:[XZGPUImageBaseFilter class]]) {
+            ((XZGPUImageBaseFilter *)filter).facesPointCount = facesPointCount;
         }
     }
 }
@@ -195,8 +195,8 @@
 #pragma mark - Action
 
 - (void)displayAction {
-    if ([self.currentEffectFilter isKindOfClass:[SCGPUImageBaseFilter class]]) {
-        SCGPUImageBaseFilter *filter = (SCGPUImageBaseFilter *)self.currentEffectFilter;
+    if ([self.currentEffectFilter isKindOfClass:[XZGPUImageBaseFilter class]]) {
+        XZGPUImageBaseFilter *filter = (XZGPUImageBaseFilter *)self.currentEffectFilter;
         filter.time = self.displayLink.timestamp - filter.beginTime;
     }
 }

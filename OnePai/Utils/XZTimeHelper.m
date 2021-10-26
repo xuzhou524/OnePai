@@ -1,14 +1,14 @@
 //
-//  SCTimeHelper.m
+//  XZTimeHelper.m
 //  OnePai
 //
 //  Created by Lyman on 2019/6/3.
 //  Copyright © 2019 zhouzhou. All rights reserved.
 //
 
-#import "SCTimeHelper.h"
+#import "XZTimeHelper.h"
 
-@implementation SCTimeHelper
+@implementation XZTimeHelper
 
 + (NSString *)timeStringWithTimestamp:(NSInteger)timestamp {
     NSInteger second = timestamp % 60;

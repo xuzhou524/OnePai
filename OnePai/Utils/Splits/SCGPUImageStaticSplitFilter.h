@@ -6,9 +6,9 @@
 //  Copyright © 2019 zhouzhou. All rights reserved.
 //
 
-#import "SCGPUImageBaseFilter.h"
+#import "XZGPUImageBaseFilter.h"
 
-@interface SCGPUImageStaticSplitFilter : SCGPUImageBaseFilter
+@interface SCGPUImageStaticSplitFilter : XZGPUImageBaseFilter
 
 /// 水平分割数，默认 2.0，最小 1.0
 @property (nonatomic, assign) CGFloat horizontal;
